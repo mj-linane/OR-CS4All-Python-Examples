@@ -1,3 +1,5 @@
+# Random and Loop Draw Dots
+
 import turtle
 import random
 wn = turtle.Screen()
