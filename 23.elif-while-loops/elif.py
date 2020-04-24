@@ -1,6 +1,6 @@
 # ELIF STATEMENTS
 
-favorite = input("What is your favorite flavor of ice cream ")
+favorite = input("\nWhat is your favorite flavor of ice cream?\n")
 
 if favorite == "vanilla":
     print("your favorite flavor is vanilla")
