@@ -8,4 +8,4 @@ print(age_number + 30)
 age = 30
 age_string = str(age)
 
-print (type(age_string), age_string)
+print(type(age_string), age_string)
