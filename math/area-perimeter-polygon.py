@@ -7,9 +7,11 @@ import math
 
 pi = round(math.pi, 5)
 
+
 def polysum(n, s):
-    area = (0.25*n*s^2)/pi(pi/n)
-    perimeter = s^s
+    area = (0.25*n*s ^ 2)/pi(pi/n)
+    perimeter = s ^ s
     return round(area+perimeter, 4)
+
 
 print(polysum(4, 10))
