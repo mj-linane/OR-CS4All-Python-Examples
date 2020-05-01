@@ -1,69 +1,88 @@
-# RULES
-# Dictionaries are key:value pairs
+# DICTIONARIES
 
-# More than one entry per key is not allowed ( no duplicate key is allowed)
-
-# The values in the dictionary can be of any type while the keys must be immutable like numbers, tuples or strings.
-
-# Dictionary keys are case sensitive- Same key name but with the different case are treated as different keys in Python dictionaries.
-
-# CREATE A DICTIONARY OBJECT
+# CREATING A NEW DICTIONARY
+# KEY - VALUE PAIRS
 person1 = {
     'Name': 'MJ',
     'Job': 'Teacher',
-    'Age': 34,
-    'Location': 'Mattapoisett',
-    'Number of Students': None,
+    'Age': 24,
+    'Location': 'Massachusetts',
+    'Hobbies': ['coding', 'video games'],
+    'Bio': {'height': 6, 'weight': 175},
+
 }
 
-# PRINT A DICTIONARY VALUE BY GIVING KEY
+# GET DICTIONARY VALUE (USING KEY)
 x = person1['Name']
 
-# GET LENGTH OF A DICTIONARY
+# GET ALL KEYS
+x = person1.keys()
+
+# for key in person1.keys():
+# print(key)
+
+# GET LENGTH OF DICTIONARY
 x = len(person1)
 
-# UPDATING A DICTIONARY
-person1.update({'Favorite Language': 'Python'})
+# ADD NEW KEY-VALUE TO A DICTIONARY
+person1.update({'Favorite Coding Language': 'Python'})
 
-# or we can do it using variables
-person1['Number of Students'] = 100
+# UPDATE A VALUE
+person1['Age'] = 25
 
-x = person1
-
-# DELETE KEYS FROM DICTIONARY
+# DELETE A KEY-VALUE
 del person1['Age']
-x = person1
 
-# GET A LIST OF ITEMS IN THE DICTIONARY
-students = {'Jack': 18, 'Charlie': 15, 'Amber': 16, 'Robert': 18}
+# GET ALL VALUES
 
-x = students.items()
+x = person1.values()
 
-# DO SOMETHING TO EACH KEY
-for key in students.keys():
-    print(key)
+# for value in person1.values():
+#   print(value)
 
-# CHECK ALL VALUES
-students.values()
+# GETTING VALUE IN LIST INSIDE OF DICTIONARY
+x = person1['Hobbies'][0]
 
-# CHECK TO SEE IF A VALUE ALREADY EXISTS IN A DICTIONARY
+# GETTING VALUE IN DICTIONARY INSIDE OF DICTIONARY
+x = person1['Bio']['height']
 
-# Here we have two sub-dictionaries "Boys" and "Girls", now we want to check whether our dictionary Boys exist in our main "students" dictionary or not.
+# COMPARE DICTIONARIES
+boys = {
+    'Jack': 18,
+    'Charlie': 15,
+    'Bob': 18,
+}
 
-boys = {'Jack': 18, 'Charlie': 15, 'Robert': 18}
-girls = {'Amber': 16}
-for key in list(students.keys()):
-    if key in list(boys.keys()):
+girls = {
+    'Julia': 16,
+    'Mary': 15,
+}
+
+for boy in boys.keys():
+    if boy in girls.keys():
         print(True)
     else:
         print(False)
 
-print(students.items())
-print(x)
+# CHALLENGE #1
+"""
+Create dictionary of viruses and their rate of infection
 
-# DO THIS:
-# Create 3 viruses in Python using dictionaries
-# Each will have a key value pair of:
-# -NAME
-# -INFECTION PROBABILITY
-# -LETHALITY PROBABILITY
+R0 dictionary
+Seasonal Flu - 1.3
+SARS - 2-5, [2, 5]
+HIV - 2-5
+Measels - 12-16
+Coronavirus/covid-19 - 2-3
+Zombie Virus - R?
+
+"""
+
+# CHALLENGE #2
+"""
+Create 3 viruses in Python using dictionaries
+Each will have a key value pair of:
+-NAME
+-INFECTION PROBABILITY
+-LETHALITY PROBABILITY
+"""
