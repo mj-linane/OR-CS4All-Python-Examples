@@ -56,7 +56,7 @@ HANGMAN = ['''
  /|\  |
  / \  |
       |
-=========''']
+=========''']  # noqa: W605
 
 MAX_WRONG = len(HANGMAN) - 1
 WORDS = ["BEAR", "PIZZA", "SNAKE", "WASHINGTON", "MOON"]
