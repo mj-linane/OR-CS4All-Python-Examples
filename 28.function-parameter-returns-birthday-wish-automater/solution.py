@@ -66,6 +66,7 @@ report_all_birthdays()
 
 
 # TODO: Create function to calculate age for report
+# TODO: Add main menu function to allow additional entries into the birthday wisher program
 
 def get_random_wish():
     # TODO: Finalize wish list and incorporate into composition function
