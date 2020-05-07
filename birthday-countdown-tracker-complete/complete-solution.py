@@ -32,6 +32,7 @@ def get_days_until_bday(person):
 
 def report_days_left(person):
     name = person.upper()
+    # Here we can assign a variable to the returned value of a function
     num_days = get_days_until_bday(people[name])
 
     # Check for difference
