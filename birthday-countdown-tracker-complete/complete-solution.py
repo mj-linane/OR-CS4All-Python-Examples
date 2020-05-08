@@ -1,4 +1,10 @@
 # Birthday Countdown Tracker
+"""
+- Keep a list of people and their birthdays
+- Calculate days until their birthdays
+- Report to me a list of birthdays
+"""
+
 import datetime
 
 people = {
@@ -56,6 +62,14 @@ def report_person_days_left(name):
 
 
 def report_person_age_turning(name):
+    """Reports person age
+
+    Arguments:
+        name {string} -- Name of person in people list
+
+    Returns:
+        string -- Compiled concatenated greeting
+    """
     num_days = get_days_until_bday(name)
 
     def cal_person_age_turning(name):
