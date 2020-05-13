@@ -23,7 +23,7 @@ day = now.day
 def get_days_until_bday(person):
     # Convert to date object
     birthdate = datetime.date(
-        yr, people[person]['month'], people[person]['day'])
+        yr, person['month'], person['day'])
 
     # Format today's date for comparision
     today_date = datetime.date(yr, month, day)
@@ -36,7 +36,7 @@ def get_days_until_bday(person):
 
 def report_person_days_left(name):
     # Here we can assign a variable to the returned value of a function
-    num_days = get_days_until_bday(name)
+    num_days = get_days_until_bday(people[name])
 
     # Check for difference
     if num_days == 0:
@@ -62,15 +62,8 @@ def report_person_days_left(name):
 
 
 def report_person_age_turning(name):
-    """Reports person age
 
-    Arguments:
-        name {string} -- Name of person in people list
-
-    Returns:
-        string -- Compiled concatenated greeting
-    """
-    num_days = get_days_until_bday(name)
+    num_days = get_days_until_bday(people[name])
 
     def cal_person_age_turning(name):
         if num_days < 0:
