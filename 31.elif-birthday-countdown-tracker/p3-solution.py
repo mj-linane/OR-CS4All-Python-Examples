@@ -48,7 +48,7 @@ def report_person_days_left(name):
             name.capitalize() +
             "'s birthday is in " +
             str(num_days) +
-            " days." +
+            " days."
         )
     else:
         return (
