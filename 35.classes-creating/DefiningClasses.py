@@ -1,4 +1,4 @@
-# OBJECT ORIENTED PROGRAMMING AND CLASSES
+# OBJECT ORIENTED PROGRAMMING AND CLASSES -- Defining Classes
 
 # DOG
 # Characteristics: gender, breed, age, hair color, weight, temperament
@@ -14,23 +14,32 @@ Take a real world object and consider how could we code that in real life?
 # CODING A DOG'S BEHAVIORS (METHODS) WITH FUNCTIONS
 
 
-def bark():
-    print("Bark!")
+# def bark():
+#     print("Bark!")
 
 
-# CODING A DOG'S ATTRIBUTES
-# OPTION 1: VARIABLES
-gender = 'male'
-breed = 'great dane'
-age = 13
+# def sit():
+#     print("I am sitting")
 
-# OPTION 2: DICTIONARY
-dog = {
-    'name': 'Ghost',
-    'gender': 'male',
-    'breed': 'great dane',
-    'age': 13,
-}
+
+# # CODING A DOG'S ATTRIBUTES
+# # OPTION 1: VARIABLES
+# dog1Gender = 'male'
+# dog1Breed = 'great dane'
+# dog1Age = 13
+
+# # Would have to do the same for multiple dogs. Inefficient.
+# dog2Gender = ''
+# dog2Breed = ''
+# dog2Name = 0
+
+# # OPTION 2: DICTIONARY
+# dog = {
+#     'name': 'Ghost',
+#     'gender': 'male',
+#     'breed': 'great dane',
+#     'age': 13,
+# }
 
 
 # OPTION 3: CLASS
@@ -101,3 +110,15 @@ class Dog(object):
 # PART 3: CREATING MULTIPLE OBJECTS
 beagle = Dog()
 poodle = Dog("Ghost", 2)
+
+# All copies inherit the attributes and behaviors of their parent templates
+beagle.bark()
+poodle.bark()
+
+# If we add a sit command to the parent, such as this:
+
+
+def sit():
+    print("I am sitting")
+
+# All children will then inherit it.
