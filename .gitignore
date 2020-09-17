@@ -1,2 +1,13 @@
 .vscode
-.gdoc
+
+# Google Doc
+*.gdoc
+
+# Google Slides
+*.gslides
+
+# PDF
+*.PDF
+
+# Google Sheets
+*.gsheet
