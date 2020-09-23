@@ -210,14 +210,14 @@ game.splash("5 * 7 = " + answer)
 ### Student Task #2: Basic math operators with variables
 
 1. Start with example #2
-2. Add a `variables:thirdNumber` variable with a unique value
+2. Add a `third_number` variable with a unique value
 3. Create an equation using both the addition operator (+) and the multiplication operator (*)
 4. Swap the Addition and Multiplication operator and run the program (Typically the answers will differ)
 
 ### Student Task #3: Multiple operators and variables equation
 
 1. Start with the code from the previous task
-2. Add a `variables:fourthNumber` variable
+2. Add a `forth_number` variable
 3. Create an equation using 3 different operators
 4. Challenge: create an equation using all 4 basic operators (+, -, *, /) and at least 5 unique variables
 
@@ -231,14 +231,14 @@ Look at the Python code. For multiple operator equations it is often easier to c
 ### Student Task #5: Conversion
 
 1. Create 2 variables
-   1. `variables:tempC` (temperature Celsius)
-   2. `variables:tempF` (temperature Fahrenheit)
-2. Initialize `variables:tempC` with common Celsius temperature (for example, 22.0)
+   1. `temp_c` (temperature Celsius)
+   2. `temp_c` (temperature Fahrenheit)
+2. Initialize `temp_c` with common Celsius temperature (for example, 22.0)
 3. Create an equation using the formula:
-   1. `variables:tempF` = `variables:tempC` × 9/5 + 32 and assign it to a new variable `variables:temp`
-4. Show the `variables:temp` in a Splash Screen
+   1. `temp_f = temp_c × 9/5 + 32` and assign it to a new variable `temp`
+4. Show the `temp` in a Splash Screen
 5. Challenge: create an equation for converting back to Celsius:
-    1. `variables:tempC` = (`variables:tempF` - 32) × 5/9
+    1. `temp_c = (temp_f - 32) × 5/9`
     2. pay careful attention to the parentheses
 
 ~hint
@@ -248,14 +248,10 @@ It can be difficult to structure complicated expressions using blocks. Look at a
 
 We decided that we want to have three different variables in our code - `variables:a`, `variables:b`, and `variables:c`. The variable `variables:a` should be set to 3, `variables:b` should be set to a + 5, and `variables:c` should be set to a + 2 * b. This should result in `variables:a` storing 3, `variables:b` storing 8, and `variables:c` storing 19 at the end. When we wrote this out, though, we found that we couldn't run our code. What is going wrong in the following code, and how can you fix it?
 
-Fix the Code here
-
-image of code blocks with error
-
 ~hint
 Click edit to fix code. `game:splash` can display string characters. Review the previous examples that use `game:splash`.
-
 ~
+
 After you are able to run the code, the value of `variables:c` should be shown on the screen. There's a problem because the value shown is not quite right. Rearrange the existing blocks so that it produces the correct output, without removing or adding any JavaScript or blocks beyond what was necessary for part 1. What went wrong? Fix the output.
 
 ## Variables Summary
