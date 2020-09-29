@@ -133,6 +133,7 @@ controller.up.on_event(ControllerButtonEvent.PRESSED, on_up_pressed)
 ```
 
 ## Step 5: User feedback
+
 Whenever the scorekeeper presses button A, button B, or both buttons together, we will give the user visual feedback acknowledging that the user pressed a button. We can do this by coding our program to display a splash message:
 
 - a "player A scored" each time the user presses button A to record a win for Player A,
