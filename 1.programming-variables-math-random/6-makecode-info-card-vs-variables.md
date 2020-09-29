@@ -129,7 +129,7 @@ my_sprite.say(":)")
 
 #### Challenge
 
-Instead of outputting an exact estimate, give a range that the button presses will likely fall into - estimate this by making the low end of the range correspond to (score - 1) * 10, and the high end of the range correspond to (score + 1) * 10. For example, if the score were 5, the output should be something along the lines of "between 40 and 60".
+Instead of outputting an exact estimate, give a range that the button presses will likely fall into - estimate this by making the low end of the range correspond to `(score - 1) * 10`, and the high end of the range correspond to `(score + 1) * 10`. For example, if the score were 5, the output should be something along the lines of "between 40 and 60".
 
 #### Hint
 
