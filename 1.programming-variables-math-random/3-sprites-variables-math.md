@@ -25,7 +25,7 @@ In this activity, students are introduced to:
 - Concept: Set a `sprites:Sprite` variable to an image using the image editor
 - Link to Video
 
-The blocks needed to create sprites are found in the `sprites:Sprites` menu. The `variables:set my_sprite to` is the first block in this category that we will discuss. The following example shows the creation of a sprite with a blank image.
+The blocks needed to create sprites are found in the `sprites` menu. The `my_sprite = sprites.create()` is the first block in this category that we will discuss. The following example shows the creation of a sprite with a blank image:
 
 ```python
 my_sprite = sprites.create(img`
@@ -93,7 +93,7 @@ Create a new project on MakeCode
 5. Look at how the sprite image is represented in Python
 
 Background color
-Try changing the background color using `scene:set background color to` in the `scene:Scene` category.
+Try changing the background color using `scene:set background color to` in the `scene` category.
 
 ~
 
@@ -112,7 +112,7 @@ Explain why we see only 14 colors at a time, despite the fact that there are 16 
 
 A variable points to a container that can store data. We have previously used variable names for sprites (for example, `my_sprite`). Variables act like an address, and allow us to store, retrieve, and update data.
 
-For the examples in the "sprites" lesson, the variable `variables:mySprite` allowed us to interact with the sprite in our game. The word "variable" also means change. We can update the values our variable point to, such as updating the `variables:mySprite` variable to point to a completely different sprite.
+For the examples in the "sprites" lesson, the variable `my_sprite` allowed us to interact with the sprite in our game. The word "variable" also means change. We can update the values our variable point to, such as updating the `my_sprite` variable to point to a completely different sprite.
 
 Variables are used extensively in code. Variables allow code to be written in a generic way, and allow for easier reuse of our code. Math equations, like X = 2Y, provide familiar examples in the use of variables that apply to code by assigning known values to variables to calculate unknown variable values.
 
@@ -124,7 +124,7 @@ In this activity, students are introduced to:
 - Storing the result of an equation in a variable
 - Evaluating equations using variables
 - Modifying and creating variable equations
-- Displaying text with `game:splash` by using `text:join`
+- Displaying text with `game.splash()` by using `+`
 - Differentiating between the number and string data types
 
 ## Concept 1: Types of Variables
@@ -166,11 +166,11 @@ game.splash("3 + 5 = " + answer)
 1. Starting with example #1
 2. Experiment using different numbers in our equation (e.g. 9 + 2)
 3. Test at least 3 different equations
-4. Challenge: make longer addition equations with `math:Math` blocks so that the code calculates the sum of 5 or more numbers. If the equation gets too long, then display using `game:show long text`
+4. Challenge: make longer addition equations with `math` blocks so that the code calculates the sum of 5 or more numbers. If the equation gets too long, then display using `game.show_long_text()`
 
-In order to combine multiple items we will need to add additional `math:Math` blocks
+In order to combine multiple items we will need to add additional `math` blocks
 
-The splash screen is primarily designed for short sentences. This limits the length of equation we can effectively display. `game:show long text` allows for a better representation for longer text.
+The splash screen is primarily designed for short sentences. This limits the length of equation we can effectively display. `game.show_long_text()` allows for a better representation for longer text.
 
 ## Concept: Basic math operators with variables
 
@@ -185,7 +185,7 @@ In Python, the following order of operation precedence applies:
 
 Note: Python uses the* symbol for multiplication the / for division. In order to change order of these operations, you can use parentheses ( ) around expressions just like in math.
 
-### Example #2: Displaying expressions with `game:splash` #example-2
+### Example #2: Displaying expressions with game.splash()
 
 - Review the code below
 - Create the sample code and run the code
@@ -221,12 +221,9 @@ game.splash("5 * 7 = " + answer)
 3. Create an equation using 3 different operators
 4. Challenge: create an equation using all 4 basic operators (+, -, *, /) and at least 5 unique variables
 
-~hint
 Look at the Python code. For multiple operator equations it is often easier to code in Python. Note how using parenthesis ( ) changes the equation.
 
-
 ### Student Task #4: Movement
-
 
 ### Student Task #5: Conversion
 
@@ -267,7 +264,7 @@ Displaying a number often requires type coercion by using `text:join` to convert
 
 1. In Python what is the resulting value of answer for answer = 5 + 3 *2? Explain why the answer is not 16.
 2. How is putting operators and numbers into a calculator different than writing in code (example: 2 + 3 + 4* 4)? Explain.
-3. Research and describe 2 other `math:Math` operators found in the math menu in @boardname@ (hover over values for more information).
+3. Research and describe 2 other `math:Math` operators found in the math menu in Makecode (hover over values for more information).
 
 ## Additional Resources
 
