@@ -162,6 +162,6 @@ my_sprite.say("score " + "is " + "here")
 
 ## What We Learned
 
-- List one extra behavior you get for each of the three values we used in the `info:info` category (`info.score()`, `info.lives()`, and `info.start_countdown()`).
+- List one extra behavior you get for each of the three values we used in the `info` category (`info.score()`, `info.lives()`, and `info.start_countdown()`).
 - List one potential downside of using `info.score()` over just using your own variables to keep track of the state of your game.
 - Consider what you would do if you needed to keep track of the number of coins the player has earned, the number of keys they have collected, and the number of chicken legs they have to eat. Consider whether using `info.score()` be helpful in storing all these values.
