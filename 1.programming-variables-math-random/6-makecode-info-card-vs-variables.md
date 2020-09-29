@@ -20,7 +20,7 @@ In this activity, you are introduced to:
 - The `info.start_countdown(10)` code
 - The `pause()` code
 
-## Topic: Using `info:score` to keep track of button presses
+## Topic: Using `info.score()` to keep track of button presses
 
 The first example will be a simple one - simply counting the number of buttons pressed and keeping track of them as a score. We will discuss the ability to accept any button press input:
 
