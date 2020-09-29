@@ -3,22 +3,22 @@ title: 'Makecode Info Card vs Variables'
 author: 'MJ Linane'
 date: '09-29-2020'
 course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.intro-programming'
-lesson number: ''
+lesson number: '6'
 ---
 
 ## Topic: Info Category Variable Properties
 
 We have previously worked with variables we created. A lot of the time, software developers need to interact with variables and values that were created elsewhere.
 
-The `info:info` category in blocks contains a few variables (data properties) which we are allowed to update. These properties have to do with score, life, and time. We will take a quick look at how to use these as variables in our code.
+The `info` category in blocks contains a few variables (data properties) which we are allowed to update. These properties have to do with score, life, and time. We will take a quick look at how to use these as variables in our code.
 
 In this activity, you are introduced to:
 
-- Using the `info:score` and `info:life` properties
+- Using the `info.score()` and `info.life()` properties
 - Combining numeric values with math operators (*)
-- The benefits of using `info:score` and `info:life` over other options
-- The `info:countdown` block/code
-- The `loops:pause` block/code
+- The benefits of using `info.score()` and `info.life()` over other options
+- The `info.start_countdown(10)` code
+- The `pause()` code
 
 ## Topic: Using `info:score` to keep track of button presses
 
@@ -53,7 +53,7 @@ Notice that the score pops up in the top right corner as soon as it is used for 
 2. Add in a `info.start_countdown(10)`
 3. Run the code you created in task #1 a few times, and try to get different scores. Notice the benefits of using both the `info.start_countdown(10)` and the `info.change_score_by(1)` - the countdown creates a timer that counts down to 0, and then ends the game at that point. The score keeps track of the value for you which is shown in the top right corner. When the game is over, the `info.score()` maintains a `info.high_score()` automatically through multiple runs of the game.
 
-## Topic: Using `info:life`
+## Topic: Using `info.life()`
 
 Beyond score, another important value to keep track of is the players life total. This allows us to make games where players can be penalized for mistakes, without simply ending the game immediately when they make one.
 
