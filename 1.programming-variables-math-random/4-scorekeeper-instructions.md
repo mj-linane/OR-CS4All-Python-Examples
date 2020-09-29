@@ -6,11 +6,11 @@ course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.programming-vari
 lesson number: '4'
 ---
 
-## Concept 1: Constants and Variables
+## Topic 1: Constants and Variables
 
 Computer programs process information. Some of the information that is input, stored, and used in a computer program has a value that is constant, meaning it does not change throughout the course of the program. An example of a constant in math is ‘pi’ because ‘pi’ has one value that never changes. Other pieces of information have values that vary or change during the running of a program. Programmers create variables to hold the value of information that may change. In a game program, a variable may be created to hold the player’s current score, since that value would change (hopefully!) during the course of the game.
 
-###  Discussion
+### Discussion
 
 - What pieces of information have values that don’t change during the course of a single day (constants)?
 - What pieces of information have values that do change during the course of a single day (variables)
@@ -47,7 +47,7 @@ A **variable** is a saved value that does change in the program.
 
 Notice here that the “ADDRESS” is capitalized. This indicates that it is a constant and should not be changed in the program. However, there is nothing in Python that will absolutely stop a programmer from redefining that value.
 
-## Coding A Score Keeper Overview
+## Topic 2: Coding A Score Keeper Overview
 
 You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeping that change over the course of a gaming session. What are those variables?
 
@@ -55,13 +55,13 @@ You will be creating a program that will act as a scorekeeper for the Rock Paper
 - The number of times the second player wins
 - The number of times the players tie
 
-## Step 1: Creating and naming variables
+### Step 1: Creating and naming variables
 
 Let's work together on creating some variable names.
 
 What would be a unique and clear name for the variable that will keep track of the number of times Player A wins?
 
-## Step 2: Initialize Your Variables
+### Step 2: Initialize Your Variables
 
 In MakeCode, from the Variables menu, make and name these three variables: `player_a_wins`, `player_b_wins`, `player_ties`.
 
@@ -73,7 +73,7 @@ player_b_wins = 0
 player_ties = 0
 ```
 
-## Step 3: Updating the variable value
+### Step 3: Updating the variable value
 
 In our program, we want to keep track of the number of times each player wins and the number of times they tie. We can use the buttons A and B to do this.
 
@@ -107,7 +107,7 @@ def on_up_pressed():
 controller.up.on_event(ControllerButtonEvent.PRESSED, on_up_pressed)
 ```
 
-## Step 4: Change variable
+### Step 4: Change variable
 
 Add code to each of the `on_pressed()` to increase the number of wins for each player.
 
@@ -132,7 +132,7 @@ def on_up_pressed():
 controller.up.on_event(ControllerButtonEvent.PRESSED, on_up_pressed)
 ```
 
-## Step 5: User feedback
+### Step 5: User feedback
 
 Whenever the scorekeeper presses button A, button B, or both buttons together, we will give the user visual feedback acknowledging that the user pressed a button. We can do this by coding our program to display a splash message:
 
@@ -146,7 +146,7 @@ We add these messages within each button press function.
 game.splash("player A scored")
 ```
 
-## Step 6: Showing Total Number of Rounds Played and Scores
+### Step 6: Showing Total Number of Rounds Played and Scores
 
 There is more we can do with the input we received using this program. We can use mathematical operations on our variables.
 
@@ -174,7 +174,7 @@ Test the program again to make sure that it runs correctly and displays the corr
 
 What other math operations could provide valuable information from the values stored in these variables?
 
-## Step 7: Additional Challenges
+### Step 7: Additional Challenges
 
 1. Calculate and display a player’s wins and/or losses as a percentage of all rounds played.
 2. Calculate a display the number of tied games as a percentage of all rounds played.
