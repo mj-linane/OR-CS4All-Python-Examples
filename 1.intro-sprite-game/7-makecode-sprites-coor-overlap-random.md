@@ -6,9 +6,9 @@ course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.intro-sprite-gam
 lesson number: ''
 ---
 
-## Project #1: Coordinate Walker
+## Topic #1: Coordinates & Walker
 
-### Step 1: Identify the X, Y coordinates of the Game Screen
+### Project #1: Identify the X, Y coordinates of the Game Screen
 
 [Link to Video](https://aka.ms/40544a-03_coordinate_walker_intro_final)
 
@@ -69,3 +69,21 @@ Use `X` and/or `Y` in your answers
 ### Student Task #2: Map Game Screen
 
 Use the Jamboard class activity
+
+## Topic 2: Sprites Overlap
+
+### Project #2: Eat Fruit
+
+### Step 1: Add actions to overlap events
+### Step 2: Ghost Off and On
+### Step 3: Multiple Kinds
+
+### Topic #3: Random
+
+Random numbers provide an element of chance to our games that make them look and feel more natural. They can also provide surprises and introduce elements of “good” or “bad” luck.
+
+### Project 3: Random Location
+## Step 1: Random Sprite Location
+## Step 2: Set random position using a button event
+## Check for random overlap with many sprites
+
