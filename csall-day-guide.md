@@ -9,4 +9,3 @@
 7. Sprites Coordinates and Detect Overlap
 8. Random Locations
 9. Sprite motion and sprite overlap random
-10. 
