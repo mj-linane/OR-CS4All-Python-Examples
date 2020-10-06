@@ -202,13 +202,6 @@ Flipping an image creates a mirror image when we create a function called `def f
 3. Create the sample code and run the code
 
 ```python
-def on_a_pressed():
-    flip_horizontal()
-controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
-
-def flip_horizontal():
-    my_sprite.image.flip_x()
-    pause(200)
 scene.set_background_color(6)
 my_sprite = sprites.create(img("""
         ................................
@@ -249,14 +242,19 @@ my_sprite = sprites.create(img("""
 
 ### 4.2: Image Flip with motion
 
-1. Make your own image move using the ``controller:up``, ``controller:down``, ``controller:left``, ``controller:right`` buttons on the controller
-2. Use ``controller:A`` button to run the code `flip_horizontal` to flip the image upside down.
+1. Make your own image move using the ``controller:up``, ``controller:down``, ``controller:left``, `controller:right` buttons on the controller
+2. Use `controller:A` button to run the code `flip_horizontal` to flip the image left and right.
 
 ```python
 def on_a_pressed():
     flip_horizontal()
+
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 ```
+
+### 4.3: Optional Challenge
+
+Add code and use `controller:B` button to flip the image upside down.
 
 ## Discussion Questions
 
