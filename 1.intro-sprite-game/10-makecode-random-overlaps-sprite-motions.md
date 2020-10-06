@@ -15,10 +15,10 @@ lesson number: ''
 
 ```python
 def on_a_pressed():
-    flipHorizontal()
+    flip_horizontal()
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
-def flipHorizontal():
+def flip_horizontal():
     my_sprite.image.flip_x()
     pause(200)
 scene.set_background_color(6)
