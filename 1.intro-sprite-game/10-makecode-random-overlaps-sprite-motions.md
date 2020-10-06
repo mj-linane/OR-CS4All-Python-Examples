@@ -12,7 +12,7 @@ lesson number: ''
 
 [Link to Video](https://aka.ms/40544a-randompositionoverlap)
 
-1. Create a new project called `sprite_overlap`
+1. Create a new project called `sprite_overlap_random`
 2. Enter in the sample code below
 
 ```python
@@ -21,11 +21,14 @@ class SpriteKind:
     Hat = SpriteKind.create()
 
 def on_a_pressed():
-    mySprite.set_position(randint(15, 145), randint(15, 105))
+    my_sprite.set_position(randint(15, 145), randint(15, 105))
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
-def on_on_overlap(sprite, otherSprite):
+def on_on_overlap(sprite, other_sprite):
     sprite.say("Excuse Me!", 500)
+    # Add some code that makes the sprite or other_sprite do something with random
+    # Add some code that makes sprite or other_sprite say something
+
 sprites.on_overlap(SpriteKind.player, SpriteKind.Hat, on_on_overlap)
 
 hat = sprites.create(img("""
@@ -63,7 +66,8 @@ hat = sprites.create(img("""
             ................................
     """),
     SpriteKind.Hat)
-mySprite = sprites.create(img("""
+
+my_sprite = sprites.create(img("""
         . . . . . . . . . . . . . . . .
             . . . 5 . . 5 . . 5 . . . . . .
             . . . . 5 . 5 . 5 . . . . . . .
@@ -82,7 +86,8 @@ mySprite = sprites.create(img("""
             . . 2 2 . . . . . 2 2 . . . . .
     """),
     SpriteKind.player)
-mySprite.set_position(randint(15, 145), randint(15, 105))
+
+my_sprite.set_position(randint(15, 145), randint(15, 105))
 hat.set_position(35, 60)
 ```
 
@@ -99,14 +104,17 @@ Add at least 2 more sprites with random or fixed position
 Add the following code:
 
 ```python
-def on_on_overlap(sprite, otherSprite):
+def on_on_overlap(sprite, other_sprite):
+    # Add some code that makes the sprite or other_sprite do something with random
+    # Add some code that makes sprite or other_sprite say something
 
 sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_on_overlap)
 ```
 
-1. Add code to the overlap code that will:
-   1. results in a new behavior that uses `randint()`. (for example, set velocity, set location, change location by, and so on)
-   2. causes the sprite to say something
+Add code to the overlap code that will:
+
+1. results in a new behavior that uses `randint()`. For example, set velocity, set location, change location by, and so on.
+2. causes the sprite or other_sprite to say something
 
 ### 1.5: Test
 
@@ -114,4 +122,5 @@ Test to see if sprites overlap works with different sprites of the same kind.
 
 ### 1.6: Optional Challenge
 
-Make multiple sprites randomly change position with the `a` button and give two of the sprites a random velocity (use a range across negative and positive for `sprites:vx` and `sprites:vy`)
+1. Make multiple sprites randomly change position with the `a` button
+2. Give two of the sprites a random velocity. Set the `randint` range across negative and positive for `vx` and `vy`. For instance: `my_sprite.set_velocity(randint(-50, 50), randint(-50, 50))`
