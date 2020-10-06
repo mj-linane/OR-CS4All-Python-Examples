@@ -28,7 +28,6 @@ def on_on_overlap(sprite, otherSprite):
     sprite.say("Excuse Me!", 500)
 sprites.on_overlap(SpriteKind.player, SpriteKind.Hat, on_on_overlap)
 
-mySprite: Sprite = None
 hat = sprites.create(img("""
         ................................
             ................................
