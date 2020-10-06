@@ -10,7 +10,7 @@ lesson number: ''
 
 [Link to Video](https://aka.ms/40544a-randompositionoverlap)
 
-1. Create a new project called "Sprite Overlap"
+1. Create a new project called `Sprite_overlap`
 2. Enter in the sample code below
 
 ```python
@@ -72,7 +72,6 @@ Add at least 2 more sprites with random or fixed position
 Add the following code:
 
 ```python
-
 def on_on_overlap(sprite, otherSprite):
 
 sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_on_overlap)
