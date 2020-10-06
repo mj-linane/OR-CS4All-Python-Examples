@@ -8,9 +8,11 @@ lesson number: ''
 
 ## Project 1: Random Overlaps
 
+### Setup Project - sprite_overlap
+
 [Link to Video](https://aka.ms/40544a-randompositionoverlap)
 
-1. Create a new project called `Sprite_overlap`
+1. Create a new project called `sprite_overlap`
 2. Enter in the sample code below
 
 ```python
@@ -59,15 +61,15 @@ my_sprite = sprites.create(img("""
     SpriteKind.player)
 ```
 
-### Do this:  Check for random overlap with many sprites
+### 1.2: Check for random overlap with many sprites
 
 Starting with the example, where the game randomly moves 2 sprites with button pushes
 
-#### Add sprites
+### 1.3: Add sprites
 
 Add at least 2 more sprites with random or fixed position
 
-#### Add overlap code
+### 1.4: Add overlap code
 
 Add the following code:
 
@@ -81,10 +83,10 @@ sprites.on_overlap(SpriteKind.player, SpriteKind.enemy, on_on_overlap)
    1. results in a new behavior that uses `randint()`. (for example, set velocity, set location, change location by, and so on)
    2. causes the sprite to say something
 
-#### Test
+### 1.5: Test
 
 Test to see if sprites overlap works with different sprites of the same kind.
 
-#### Optional Challenge
+### 1.6: Optional Challenge
 
 Make multiple sprites randomly change position with the `a` button and give two of the sprites a random velocity (use a range across negative and positive for `sprites:vx` and `sprites:vy`)
