@@ -6,7 +6,12 @@ course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.intro-sprite-gam
 lesson number: ''
 ---
 
-## Overview: Generate Sprites using ``||sprites:create||`` and `def on_on_created()`
+## Vocabulary
+
+- functions
+- functions and parameters
+
+## Overview: Generate Sprites using `sprites.create()` and `def on_on_created()`
 
 Many games need to spawn sprites for the player to do things like collect coins or avoid oil spills.
 
@@ -18,9 +23,9 @@ var = sprites.create(img("""
     SpriteKind.Cloud)
 ```
 
-` block from the Sprites menu to spawn a new empty sprite, with nothing in it yet. Then we can use an `def on_on_created()` event to set the image and a random position for newly generated sprites.
+Then we can use an `def on_on_created(sprite)` event to set the image and a random position for newly generated sprites.
 
-The `def on_on_created()` block uses the sprite's `SpriteKind` so we can give our new sprites the exact attributes we want, like an image, velocity, or position.
+The `def on_created(sprite)` function uses the sprite's `SpriteKind` so we can give our new sprites the exact attributes we want, like an image, velocity, or position.
 
 ## Project 1: Create with on created event
 
