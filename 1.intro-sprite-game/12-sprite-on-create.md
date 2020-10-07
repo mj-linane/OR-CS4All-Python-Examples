@@ -26,7 +26,7 @@ The `def on_on_created()` block uses the sprite's `SpriteKind` so we can give ou
 
 [Link to Video](https://youtu.be/XR8DmTOdgNc)
 
-### 1.1: Setup Project `spawn cloud`
+### 1.1: Setup Project `spawn_cloud`
 
 This example uses the `def on_on_created()` event function to set the sprite image and location after a sprite of a particular `SpriteKind` is spawned.
 
