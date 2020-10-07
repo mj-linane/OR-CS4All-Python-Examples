@@ -8,15 +8,17 @@ lesson number: ''
 
 ## Overview: Sprite Overlap & Events
 
-We use ``||sprites:kind||`` to give a label to our sprites so we can define how one ``||sprites:kind||`` of sprite will react when moving on top of another ``||sprites:kind||`` of sprite.
+We use `SpriteKind` to give a label to our sprites so we can define how one `SpriteKind` will react when moving on top of another `SpriteKind`.
 
-By making several cloud shaped sprites with the same ``||sprites:kind||`` of `Cloud`, we can write code so that all of the clouds interact with the ``Helicopter`` in the same way with an overlap event.
+By making several cloud shaped sprites with the same `SpriteKind.Cloud`, we can write code so that all of the clouds interact with the `Helicopter` in the same way with an overlap event.
 
-In Python, we would identify a `kind` with the keyword `class` followed by the name of the class object name. So it would look like: `class Student`.
+In Python, we would identify a `SpriteKind` with the keyword `class` followed by the name of the class object name. So it would look like: `class Student`.
+
+The rule for naming a `class` or `SpriteKind` is that the name must be capitalized with no spaces.
 
 In this activity, you will continue to work with:
 
-* ``||sprites:on overlap event||`` with a ``||sprites:kind||`` applied to several identical sprites
+* `on_on_overlap()` event function with a `SpriteKind` applied to several identical sprites
 * Overlap events
 
 ## Project #1: `SpritesKind` Overlap Event "bump" action
