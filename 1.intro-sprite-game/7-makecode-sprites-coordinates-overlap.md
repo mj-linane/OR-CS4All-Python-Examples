@@ -86,4 +86,3 @@ Random numbers provide an element of chance to our games that make them look and
 ## Step 1: Random Sprite Location
 ## Step 2: Set random position using a button event
 ## Check for random overlap with many sprites
-
