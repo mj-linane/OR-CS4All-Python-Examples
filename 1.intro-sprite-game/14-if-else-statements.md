@@ -63,7 +63,7 @@ For example, consider the case where we want to split scores into three groups: 
 ```python
 if score > 100:
   game.splash("you are an expert")
-else if score > 50:
+elif score > 50:
   game.splash("you are intermediate")
 else:
   game.splash("you are a beginner")
