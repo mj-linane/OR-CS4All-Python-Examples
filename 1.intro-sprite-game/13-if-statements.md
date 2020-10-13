@@ -69,7 +69,7 @@ if a==b:
 
 In the example above, this would print the statement because that condition check, `==`, is equal to `True`.
 
-## Example #1: Less than
+### Example #1: Less than
 
 1. Play the game linked below
 2. Review the code that uses comparisons
@@ -81,7 +81,7 @@ When the game creates a new enemy, it checks to see if the player’s score is l
 
 If that is the case, the player has just started playing the game, so the game makes it easier for the player by decreasing the speed in which the projectiles are thrown at the player.
 
-## Example #2: Scoring
+### Example #2: Scoring
 
 1. Play the game linked above
 2. Review the code that uses comparisons
@@ -91,7 +91,7 @@ If that is the case, the player has just started playing the game, so the game m
 
 When the player collects a cherry, if the player has collected more than 5, then the sprite says “Too many cherries”.
 
-## Example #3: Equality
+### Example #3: Equality
 
 1. Play the game linked above
 2. Review the code that uses comparisons
@@ -99,7 +99,7 @@ When the player collects a cherry, if the player has collected more than 5, then
 
 [Example Code]([https://link](https://makecode.com/_3pgH9LA5kL9b))
 
-## Example #4: Sequential (Multiple) If Statements
+### Example #4: Sequential (Multiple) If Statements
 
 1. Play the game linked below
 2. Review the code that uses comparisons
@@ -131,7 +131,7 @@ If any statement is equal to `False`, then the code indented under that `if` sta
 2. Create a sprite
 3. Make it so that when the player presses the A button, the score increases by 1
 4. In this event, if the player’s score is above 10, make the sprite congratulate the player on their high score
-5. In the same event, if the player’s score is an even number, change the background to a random color
+5. In the same event, if the player’s score is an even number, change the background to a random color. Hint: use the [modulo operator `%`](https://www.freecodecamp.org/news/the-python-modulo-operator-what-does-the-symbol-mean-in-python-solved/)
 
 ### Project 3 Optional Challenges
 

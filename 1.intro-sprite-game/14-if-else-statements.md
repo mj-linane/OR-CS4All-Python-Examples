@@ -28,7 +28,7 @@ if life > 2:
   game.splash("3 or more lives")
 ```
 
-## Adding an `else` statement
+### Adding an `else` statement
 
 When we use an if statement, we have the option to add an else statement. An else code will only run in the event that the logic test given evaluates to false. In other words, if the test is true, then the if's code will run, else, the else code will run.
 
@@ -42,7 +42,7 @@ else:
   game.splash("set high score")
 ```
 
-## Concept: `else if` statement
+## Concept: `if else` statement
 
 Using `if-else` allows us to split all comparisons into two categories - either the comparison is true or false (not true).
 
