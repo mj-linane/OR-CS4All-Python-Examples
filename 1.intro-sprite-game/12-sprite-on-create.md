@@ -17,7 +17,7 @@ Many games need to spawn sprites for the player to do things like collect coins 
 - functions with parameters
 - calling functions with parameters
 
-## Project 1: Create with on created event
+## Example 1: Create with on created event
 
 [Link to Video](https://youtu.be/XR8DmTOdgNc)
 
@@ -27,37 +27,7 @@ This example uses the `sprites.create` and `sprites.on_created()` functions to g
 
 1. Review the code below
 2. Create a new project and name it `spawn_cloud`
-3. Create the sample code and run the code
-
-We will set a new variable called `cloud` and then create an empty sprite with nothing in it.
-
-```python
-cloud = sprites.create(img("""
-    """),
-    SpriteKind.Cloud)
-```
-
-### 1.2: How It Works
-
-### Creating New Sprites And Adding In `sprites.on_created()`
-
-The `sprites.create()` function creates a cloud and we add ing `SpriteKind.Cloud` to the end to give it a class of `Cloud`.
-
-```python
-cloud = sprites.create(img("""
-    """),
-    SpriteKind.Cloud)
-```
-
- the sprite's `SpriteKind` so we can give our new sprites the exact attributes we want, like an image, velocity, or position.
-
-#### Adding Sprite Actions After Creation
-
-Then we can then write a function called
-
-`def on_created_cloud()` that runs once when the cloud is created.   use an `sprites.on_created()` event to set the image and a random position for newly generated sprites. When we use `on_on_created()` we are running code the instant that a sprite is created.
-
-
+3. Copy and paste the sample code below and run the code
 
 ```python
 @namespace
@@ -191,17 +161,74 @@ cloud2 = sprites.create(img("""
     SpriteKind.Cloud)
 ```
 
-### 1.2: Add More Random Clouds
+### How it works
 
-The `def on_on_created(sprite)` function allows us to set code to run whenever a new sprite is created. This is used to create new clouds multiple times with the same code. Now we will create new clouds with the `cloud` variable and empty sprite images.
+We want to create clouds but don't want to set their sprite at the start. Therefore, the code starts with a variable called `cloud` but it gets an empty sprite.
 
-1. Add two more `cloud` variables by adding a number to the end; `cloud2`, `cloud3`, etc
-2. Add a new sprite and set it to a different `SpriteKind`. Use the `def on_on_created()` function event to
+```python
+cloud = sprites.create(img("""
+    """),
+    SpriteKind.Cloud)
+```
+
+#### Creating New Sprites And Adding In `sprites.on_created()`
+
+The `sprites.create()` function creates a cloud and we adding `SpriteKind.Cloud` to the end to give it a class of `Cloud`.
+
+```python
+cloud = sprites.create(img("""
+    """),
+    SpriteKind.Cloud)
+```
+
+We add to the end, a comma `,` and then we name the sprite's `SpriteKind` using dot notation.
+
+#### Adding Sprite Actions After Creation
+
+The code then calls a function called `def on_created()` that runs once when the cloud is created.
+
+```python
+ef on_on_created(newCloud):
+    newCloud.set_image(img("""
+        . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . .
+                . . . . 1 1 1 1 1 8 . . . . . .
+                . . . 1 1 8 8 8 1 1 1 1 1 1 . .
+                . 8 1 1 8 8 8 8 8 8 8 8 8 1 1 .
+                . 1 8 8 8 1 8 8 8 1 1 8 8 8 1 .
+                1 1 8 8 1 1 1 1 1 8 8 8 1 1 1 .
+                1 1 8 8 8 8 8 1 1 8 1 8 1 1 . .
+                . 1 1 1 1 8 8 8 8 8 8 8 1 8 . .
+                . . . . 1 1 8 8 1 1 8 8 1 . . .
+                . . . . . . 8 8 8 1 1 1 1 . . .
+                . . . . . . 1 1 1 1 . . . . . .
+                . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . .
+                . . . . . . . . . . . . . . . .
+    """))
+    newCloud.x = randint(16, scene.screen_width() - 16)
+    newCloud.y = randint(20, scene.screen_height() - 75)
+sprites.on_created(SpriteKind.Cloud, on_on_created)
+```
+
+This then sets the image and a random position for newly generated sprites.
+
+### Project 1: `spawn_clouds`
+
+The on created event allows us to set code to run whenever a new sprite is created. This is used to create new clouds multiple times with the same code. Now we will create new clouds with by creating new variables with empty image editors.
+
+1. Start with example code
+2. Add two more set cloud to blocks for clouds
+3. Add a new set `my_sprite` for a different `SpriteKind`. Write a `on_created()` function that:
    1. set an image for the sprite that is created (for example, a bird or a butterfly)
    2. set the sprite to be in a random position
-   3. Create 5 sprites using 5 different variable names but all of the same `SpriteKind`.
+4. Create at least 5 more variables that use that `SpiteKind`
 
-### Optional Challenge
+Hint:
+If writing a new `on_created()` function in Python, you can't have the same `on_created()` name for both because Python does not allow you to have 2 functions with the same name. We will have to give it another name. If you switch to blocks to complete this step and switch back to python, you will see that MakeCode automatically adds a number to `on_created()`. So the second on created event will be: `on_on_created2()`. I am not sure why MakeCode decided to go with this approach and unless you are comfortable, it maybe easier to simple handle `on_created()` events using the blocks.
+
+### Project 1 Optional Challenge
 
 1. Create an event for the `Helicopter` overlap with the new `SpriteKind`
 2. Add an action that gives the new `SpriteKind` a fast velocity so that it will fly off the screen after they overlap
