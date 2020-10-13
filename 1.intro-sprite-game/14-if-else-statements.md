@@ -12,7 +12,7 @@ In our games we will often want to compare values, and take an action based on t
 
 > Example: Is my value smaller than a test value? If it is true that my value (3) is smaller than the test value (5) then we will add to my value. Otherwise, we will subtract from the value.
 
-Examples of if-else statments in games:
+Examples of if-else statements in games:
 
 * if player score is greater than the enemy score, then we gain points on overlap
 * if the player has 0 lives left, then we set to game over
@@ -83,19 +83,19 @@ For each example below,
 2. Review the code that uses comparisons
 3. Identify how the behavior is different from the other examples
 
-### Example #1a: Random Message
+### Example #1a: Random Message (sequential `if`)
 
 [Example #1a](https://makecode.com/_HXMRAzYY4YkU)
 
-### Example #1b: Check the Button
+### Example #1b: Check the Button (sequential `if`)
 
 [Example #1b](https://makecode.com/_LigLWHR00d74)
 
-### Example #1c: Using ``||logic:else||``
+### Example #1c: Using `else`
 
 [Example #1c](https://makecode.com/_FDoAgwhKdh1X)
 
-## Project 1: button_game (if-else if-else)
+## Project 1: button_game (if-elif-else)
 
 1. Start with the code from example #1c above
 2. Add `else` statement in the button press events that run code when the player enters the wrong button
