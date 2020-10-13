@@ -1,5 +1,5 @@
 ---
-title: 'Logic: If-Else'
+title: 'If Statements'
 author: 'MJ Linane'
 date: '10-13-2020'
 course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.intro-sprite-game'
@@ -24,22 +24,22 @@ In our games we will often want to compare values and take an action when the co
 
 > Example: Is my_value (3) smaller than a test_value (5)? If it is `True` that myValue is smaller than the testValue, then we will add 1 to myValue.
 
-We perform comparison tests with and `if-else` statement.
+We perform comparison tests with an `if` statement.
 
-We have already seen similar behaviors in events like `on_on_overlap`. **If** the two sprites were overlapping and not ghosts, then the code for the event will run (for example, the score might increase).
+We have already seen similar behaviors in events like `on_overlap()`. **If** the two sprites were overlapping and not ghosts, then the code for the event will run (for example, the score might increase).
 
 `if` statements allow us to program a behavior based on the state of the game.
 
-## Concept: `if-else` Statement
+## Concept: `if` Statements
 
-`if-else` statements perform a test, and if the test evaluates to true, then it will run code that is given. Some further examples are:
+`if` statements perform a test, and if the test evaluates to true, then it will run code that is given. Some further examples are:
 
 * if the score is greater than 10, then give additional countdown time
 * if the player has 0 lives left, then game over
 
 These are what are known as comparisons because they compare the value of two things.
 
-To use an `if-else` statement, we must fill it with a comparison test. If the test is true the code in the block will run. Below is a comparison to see if high score is greater than 5.
+To use an `if` statement, we must fill it with a comparison test. If the test is true the code in the block will run. Below is a comparison to see if high score is greater than 5.
 
 ```python
 if info.score() > 5:

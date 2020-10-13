@@ -95,7 +95,7 @@ For each example below,
 
 [Example #1c](https://makecode.com/_FDoAgwhKdh1X)
 
-## Project 1: button_game
+## Project 1: button_game (if-else if-else)
 
 1. Start with the code from example #1c above
 2. Add `else` statement in the button press events that run code when the player enters the wrong button
