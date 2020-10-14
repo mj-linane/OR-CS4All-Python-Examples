@@ -62,12 +62,13 @@ def on_a_pressed():
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 game.splash("Press A if you are hungry!")
-is_hungry = False
 ```
 
-In this example, `is_hungry` is a flag that will change the behavior of the on B button pressed event. When it is off (set to `False`), the game assumes that you are not hungry; when you turn it on (set it to `True`), though, it tells the game that you are hungry, and it reacts to this information.
+In this example, `is_hungry` is a flag that will change the behavior of the on `B button` pressed event. When it is off (set to `False`), the game assumes that you are not hungry; when you turn it on (set it to `True`), though, it tells the game that you are hungry, and it reacts to this information.
 
 ### Project #1: off_and_on
+
+Use the code in the example above.
 
 Modify the on `A button pressed event` in the `off_and_on` program so that it switches the value of `is_hungry` from `True` to `False` or from `False` to `True`, by using an `if-else` statement.
 
@@ -93,7 +94,6 @@ def on_b_pressed():
     is_hungry = False
 controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
 
-is_hungry = True
 my_sprite = sprites.create(img("""
         . . . . . . 5 . 5 . . . . . . .
         . . . . . f 5 5 5 f f . . . . .
@@ -122,10 +122,13 @@ game.on_update_interval(5000, on_update_interval)
 
 Notice how the sprite will only say something if the variable `is_hungry` is not true.
 
-`is_hungry` will be equal to `True` if:
+`is_hungry` will automatically be equal to `True` if:
 
-* the variable gets `True` => `is_hungry == True`
-* the variable has gets any value other than `0` or `None` => `is_hungry == 1` or `is_hungry == "yep"`
+* the variable gets `True` -> `is_hungry == True`
+* the variable has gets any value other than `0` or `None`. Meaning, it will be `True` if the value is:
+  * a number -> `is_hungry == 1`
+  * or a string -> `is_hungry == "yep"`
+  * or an empty string -> `is_hungry == ''`
 
 ### Project #2: not_left (is_right)
 
@@ -134,9 +137,9 @@ Notice how the sprite will only say something if the variable `is_hungry` is not
 3. Add the MakeCode function to move `my_sprite`: `controller.move_sprite(my_sprite)`
 4. Make a variable named `is_left` and set it equal to `False`
 5. In the game `on_update()` function, assign the `is_left` variable to a `0 < 0` comparison.
-   1. Replace the first `0` with the x position of `my_sprite`.
+   1. Replace the first `0` with the x position of `my_sprite`. You can get that value using `my_sprite.x`
    2. Replace the second `0` with `80`
-6. Make it so that when the player presses the A button, if `is_left` is `False`, then the sprite should say something.
+6. Make it so that when the player presses the `A button`, if `is_left` is `False`, then the sprite should say something.
 
 ### The game update function
 
@@ -219,7 +222,7 @@ game.on_update_interval(500, on_update_interval)
 1. Create a new project called `alternating_booleans`
 2. Add create a new sprite
 3. Create a new variable called `pizza` and assign it `True`
-4. Make this variable alternate boolean values when the player presses the B button
+4. Make this variable alternate boolean values when the player presses the `B button`
 5. When the player presses the A, if `pizza == True`, then fire a pizza projectile, otherwise (else) fire a burger projectile
 
 ## Concept: `and` and `or`
@@ -247,10 +250,14 @@ if True and True:
     game.splash("true and true is true")
 else:
     game.splash("true and true is false")
+
+
 if True and False:
     game.splash("true and false is true")
 else:
     game.splash("true and false is false")
+
+
 if False and False:
     game.splash("false and false is true")
 else:
@@ -268,10 +275,14 @@ if True or True:
     game.splash("true or true is true")
 else:
     game.splash("true or true is false")
+
+
 if True or False:
     game.splash("true or false is true")
 else:
     game.splash("true or false is false")
+
+
 if False or False:
     game.splash("false or false is true")
 else:
@@ -282,7 +293,7 @@ else:
 
 1. Create a new project called `and_or`
 2. Create a sprite called `my_sprite`.
-3. Add the MakeCode function to move `my_sprite`: `controller.move_sprite(my_sprite)`
+3. Add the MakeCode function to move `my_sprite` -> `controller.move_sprite(my_sprite)`
 4. Add an `on_update()` function
 5. In the `on_update()` function, add an if statement that makes the sprite say “hello” for 200 milliseconds when:
    1. the sprite x value is less than 30 **AND WHEN**
