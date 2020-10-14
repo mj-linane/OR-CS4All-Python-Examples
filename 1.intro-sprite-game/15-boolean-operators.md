@@ -328,7 +328,7 @@ else:
    1. the sprite x value is less than 30 **AND WHEN**
    2. the sprite y value is less than 30.
 6. In the `on_update()` function, add another if statement that makes the sprite say “bye” for 200 ms when:
-   1. the sprite x is greater than 80 *OR WHEN*
+   1. the sprite x is greater than 80 **OR WHEN**
    2. the sprite y is greater than 80
 
 #### Project #4 Optional Challenge
