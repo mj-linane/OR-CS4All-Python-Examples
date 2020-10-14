@@ -21,6 +21,12 @@ In these activities students will work with:
 * or
 * not
 
+### Boolean Workflow
+
+![Boolean Workflow](./sprite-game-supplemental-material/python_conditional_statement_workflow_colorado_state_edu.png)
+
+*Source: http://macs.cs.colostate.edu/modules/M4.A.html*
+
 ## Concept: Boolean Flags
 
 Boolean values are regularly used to help maintain the state of a given piece of code. It is common to describe boolean variables as “boolean flags” - these often are used to turn on and off different behaviors that might be useful.
