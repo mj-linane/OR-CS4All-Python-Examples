@@ -75,46 +75,6 @@ Modify the on `A button pressed event` in the `off_and_on` program so that it sw
 
 When we have a boolean value, we have seen that we can write code that runs when it is true using a simple if statement. However, we can also run code for when the boolean is false. This is done with the `not` operator.
 
-```python
-is_hungry = False
-
-def on_a_pressed():
-    global is_hungry
-    is_hungry = True
-controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
-
-def on_b_pressed():
-    global is_hungry
-    is_hungry = False
-controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
-
-is_hungry = True
-my_sprite = sprites.create(img("""
-        . . . . . . 5 . 5 . . . . . . .
-        . . . . . f 5 5 5 f f . . . . .
-        . . . . f 1 5 2 5 1 6 f . . . .
-        . . . f 1 6 6 6 6 6 1 6 f . . .
-        . . . f 6 6 f f f f 6 1 f . . .
-        . . . f 6 f f d d f f 6 f . . .
-        . . f 6 f d f d d f d f 6 f . .
-        . . f 6 f d 3 d d 3 d f 6 f . .
-        . . f 6 6 f d d d d f 6 6 f . .
-        . f 6 6 f 3 f f f f 3 f 6 6 f .
-        . . f f d 3 5 3 3 5 3 d f f . .
-        . . f d d f 3 5 5 3 f d d f . .
-        . . . f f 3 3 3 3 3 3 f f . . .
-        . . . f 3 3 5 3 3 5 3 3 f . . .
-        . . . f f f f f f f f f f . . .
-        . . . . . f f . . f f . . . . .
-    """),
-    SpriteKind.player)
-
-def on_update_interval():
-    if not (is_hungry):
-        my_sprite.say("I'm not hungry", 2000)
-game.on_update_interval(5000, on_update_interval)
-```
-
 ### Example #2: `not`
 
 1. Review the code example below
