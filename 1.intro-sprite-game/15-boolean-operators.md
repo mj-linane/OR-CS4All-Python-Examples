@@ -167,7 +167,7 @@ Notice how the sprite will only say something if the variable `is_hungry` is not
 * the variable gets `True` => `is_hungry == True`
 * the variable has gets any value other than `0` or `None` => `is_hungry == 1` or `is_hungry == "yep"`
 
-### Project 2: not_left (is_right)
+### Project #2: not_left (is_right)
 
 1. Start a new project called `not_left`
 2. Create a variable called `my_sprite` and assign it a sprite.
@@ -331,6 +331,6 @@ else:
    1. the sprite x is greater than 80 *OR WHEN*
    2. the sprite y is greater than 80
 
-#### Project 4 Optional Challenge
+#### Project #4 Optional Challenge
 
 Create the same behavior while using one or more `not` operators.
