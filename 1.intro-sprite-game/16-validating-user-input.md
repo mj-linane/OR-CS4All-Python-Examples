@@ -24,11 +24,10 @@ Allowing users to interact with your code is an important step in making an inte
 
 [![Link to Video](/static/thumbnail_play_video.png)](https://aka.ms/40546a-logic-input)
 
-### Example #1: Asking a question
+### Example #1: asking_a_question
 
 1. Review the code below
-2. Create the sample code and run the code
-3. Identify what condition makes you win (and what that means about what `game.ask()` turns into)
+2. Identify what condition makes you win (and what that means about what `game.ask()` turns into)
 
 ```python
   if game.ask("Do you want to win?") == True:
@@ -43,7 +42,7 @@ In this simple game, the only options are to press `A` to win, or `B` to do noth
 ### Project Task #1: option_for_failure
 
 1. Create new project called `option_for_failure`.
-2. Start with the code from example above
+2. Start with the code from example above.
 3. Add an `else` branch to the `if` statement - use `game.splash()` to say "Bye"
 4. Add an `elif` statement which provides an "option for failure." Use a `game.ask()` that asks "Do you want to lose?"
 5. Make sure the player only gets the "You lost!" message if they respond "OK" to the prompt from step 3
