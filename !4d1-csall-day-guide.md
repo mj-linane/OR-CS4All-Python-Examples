@@ -24,9 +24,7 @@
 To Cover:
 
 * Loops
+* [Logic In Loops] (https://arcade.makecode.com/courses/csintro2/logic/while)
 * Tilemaps
-* Booleans
-* Logic in Loops
 * Validating User Input
 * Arrays
-* Functions
