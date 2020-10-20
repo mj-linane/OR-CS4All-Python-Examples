@@ -58,8 +58,8 @@ Beyond asking questions with a binary response (for example, "yes or no" or "tru
 3. Identify how the users input affects the game
 
 ```python
-input = game.ask("What is your name?")
-game.splash("Hello " + input + "!")
+user_name = game.ask("What is your name?")
+game.splash("Hello " + user_name + "!")
 ```
 
 Prompts for names, like above, allows games to be more personal. The prompts can also enable users to make choices during game play, or make guesses from clues to solve a puzzle, or to use a password.
@@ -68,10 +68,10 @@ Prompts for names, like above, allows games to be more personal. The prompts can
 
 1. Create a new project called `making_a_secret_password`
 2. Start with the code from example #2.
-3. Create a new variable (`input`)
-4. Set `input` to get the result of `game.ask_for_string()`. Inside of the parenthesis of `game.ask()`, type "What is your password?". Any text inside of the parenthesis is called the "parameter" and will be passed into the function.
+3. Create a new variable (`user_password`)
+4. Set `user_password` to get the result of `game.ask_for_string()`. Inside of the parenthesis of `game.ask()`, type "What is your password?". Any text inside of the parenthesis is called the "parameter" and will be passed into the function.
 5. Create an `if-else` statement
-6. For the `if` condition, check to see if `input=="Arcade"`. This checks the input to see if it equals the string, "Arcade".
+6. For the `if` condition, check to see if `user_password=="Arcade"`. This checks the input to see if it equals the string, "Arcade".
 7. If those two are the same, `game.splash()` the phrase "login successful"
 8. Otherwise, `game.splash()` the phrase "login failed"
 
