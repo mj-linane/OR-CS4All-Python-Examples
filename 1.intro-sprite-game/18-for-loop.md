@@ -158,10 +158,10 @@ def on_update_interval():
     sprites.create(sprites.space.space_asteroid0, SpriteKind.Asteroid)
 game.on_update_interval(1500, on_update_interval)
 
-def setMotion(asteroid: Sprite):
+def setMotion(asteroid):
     asteroid.vx = randint(-8, 8)
     asteroid.vy = randint(35, 20)
-def setPosition(sprite: Sprite, edge: number):
+def setPosition(sprite, edge):
     sprite.x = randint(edge, screen.width - edge)
     sprite.y = 0
 
@@ -177,4 +177,6 @@ intro += "! This is my Space Game!"
 game.splash(intro)
 x = screen.width / 2
 y = screen.height - 20
+
+# Add loop here
 ```
