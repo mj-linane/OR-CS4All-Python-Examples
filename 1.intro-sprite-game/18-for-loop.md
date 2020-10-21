@@ -140,7 +140,7 @@ So we can see the following for how one of the spiral sides moves farther each l
 
 1. Create a new project called `asteroid_blast`
 2. We need to add a few extra Asteroids to make it seem like the player ran into an asteroid belt. At the end of the code, add a `for in range()` loop that starts at 0 and ends at 9.
-3. Inside of the loop, add `create(sprites.space.space_asteroid0, SpriteKind.Asteroid)`. This will create 10 Asteroids. Add a `pause()` for 250 ms into the loop as well, so that the extra sprites get created over the course of 2.5 seconds.
+3. Inside of the loop, add `sprites.create(sprites.space.space_asteroid0, SpriteKind.Asteroid)`. This will create 10 Asteroids. Add a `pause()` for 250 ms into the loop as well, so that the extra sprites get created over the course of 2.5 seconds.
 
 ```python
 @namespace
