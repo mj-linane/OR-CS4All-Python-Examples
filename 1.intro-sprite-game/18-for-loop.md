@@ -143,6 +143,7 @@ So we can see the following for how one of the spiral sides moves farther each l
 3. Inside of the loop, add `create(sprites.space.space_asteroid0, SpriteKind.Asteroid)`. This will create 10 Asteroids. Add a `pause()` for 250 ms into the loop as well, so that the extra sprites get created over the course of 2.5 seconds.
 
 ```python
+@namespace
 class SpriteKind:
     Asteroid = SpriteKind.create()
 
