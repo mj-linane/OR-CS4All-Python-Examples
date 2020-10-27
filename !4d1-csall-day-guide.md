@@ -20,6 +20,8 @@
     2. Project #2: not_left (is_right)
     3. Project #3: alternating_booleans
     4. Project #4: Using `and` and `or`
+13. Loops
+14. FreeCode Day
 
 To Cover:
 
