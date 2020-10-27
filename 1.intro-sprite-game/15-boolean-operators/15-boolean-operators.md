@@ -17,13 +17,13 @@ The values of these expressions are stored and used as boolean variables. Whenev
 In these activities students will work with:
 
 * Boolean flags and values (`True` and `False`)
-* and
-* or
-* not
+* `and`
+* `or`
+* `not`
 
 ### Boolean Workflow
 
-![Boolean Workflow](./sprite-game-supplemental-material/python_conditional_statement_workflow_colorado_state_edu.png)
+![Boolean Workflow](/python_conditional_statement_workflow_colorado_state_edu.png)
 
 *Source: http://macs.cs.colostate.edu/modules/M4.A.html*
 
@@ -132,7 +132,7 @@ Notice how the sprite will only say something if the variable `is_hungry` is not
 
 ### Project #2: not_left (is_right)
 
-1. Start a new project called `not_left`
+1. Start a new project called `boolean_not_left`
 2. Create a variable called `my_sprite` and assign it a sprite.
 3. Add the MakeCode function to move `my_sprite`: `controller.move_sprite(my_sprite)`
 4. Make a variable named `is_left` and set it equal to `False`
@@ -219,7 +219,7 @@ game.on_update_interval(500, on_update_interval)
 
 ### Project #3: alternating_booleans
 
-1. Create a new project called `alternating_booleans`
+1. Create a new project called `boolean_alternating_booleans`
 2. Add create a new sprite
 3. Create a new variable called `pizza` and assign it `True`
 4. Make this variable alternate boolean values when the player presses the `B button`
@@ -291,7 +291,7 @@ else:
 
 ### Project #4: Using `and` and `or`
 
-1. Create a new project called `and_or`
+1. Create a new project called `boolean_and_or`
 2. Create a sprite called `my_sprite`.
 3. Add the MakeCode function to move `my_sprite` -> `controller.move_sprite(my_sprite)`
 4. Add an `on_update()` function
