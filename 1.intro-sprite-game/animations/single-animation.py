@@ -1,5 +1,3 @@
-
-
 def on_a_pressed():
     animation.run_image_animation(mySprite,
         [img("""
