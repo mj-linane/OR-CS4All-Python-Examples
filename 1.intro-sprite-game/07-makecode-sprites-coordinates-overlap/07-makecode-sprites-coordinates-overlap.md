@@ -10,11 +10,7 @@ lesson number: ''
 
 ### Project #1: Identify the X, Y coordinates of the Game Screen
 
-[Link to Video](https://aka.ms/40544a-03_coordinate_walker_intro_final)
-
 In this activity, you will investigate the game screen.
-
-[Link to Video](https://aka.ms/40544a-coordinate-walker)
 
 Move a walker sprite around the game screen, and use it to identify `X` and `Y` coordinates.
 

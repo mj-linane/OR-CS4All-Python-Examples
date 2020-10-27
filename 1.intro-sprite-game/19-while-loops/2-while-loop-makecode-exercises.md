@@ -56,6 +56,7 @@ game.over(True)
 4. Change the `game.splash()` screen from "I'm thinking of a number between 1 and 5" to "Answer the question!"
 5. Change the while loop to check for the result of `value + second_value` instead of just `value`
 6. Change the `int(game.ask_for_string()` value to instead ask for the sum of `value` and `second_value` (make sure to include what those two values are in the message)
+   1. Remember that to combine strings and variables we can use `+`. For more information, consult the lesson on [string concatentation](./)
 
 ## Project #2: fireballs
 
@@ -144,9 +145,10 @@ An important part is missing, though: the code that will fire the fireballs when
     * Create a sprite of a fireball with the origin set to `my_sprite` (along with some initial velocities)
     * Decrement `info.life()` by 1
     * Increment `info.score()` by 1
-2. Replace the `if` statement from part 2 with a `while` loop, so that the projectiles continue **until** the player runs out of life.
+2. Replace the `if` statement with a `while` loop, so that the projectiles continue **until** the player runs out of life.
+3. You will find that the player now runs out of life so quickly that the game ends immediately. To slow down the rate of fireball creation, we need to decrease the time for the `while` loop to run. We do this by adding a call to the `pause()` function. You will need to pass into `pause` a time parameter. I recommend `pause(200)` but you could enter in any number that feels right to you.
 
-Why did we use a `while` loop instead of a ``||loops:repeat||`` loop?
+Why did we use a `while` loop instead of a `for` loop?
 
 The intention of the game is for the fires to keep being created until the game ends, once the player presses the A button.
 

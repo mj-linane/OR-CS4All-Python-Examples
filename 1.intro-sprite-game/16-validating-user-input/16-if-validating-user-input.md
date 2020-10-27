@@ -22,8 +22,6 @@ In this activity, you will use:
 
 Allowing users to interact with your code is an important step in making an interesting and enjoyable game. Logical expressions play an important part in making your code react to that user input, even with something as simple as a "yes or no" question.
 
-[![Link to Video](/static/thumbnail_play_video.png)](https://aka.ms/40546a-logic-input)
-
 ### Example #1: asking_a_question
 
 1. Review the code below

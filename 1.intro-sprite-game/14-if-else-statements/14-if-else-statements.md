@@ -42,9 +42,9 @@ else:
   game.splash("set high score")
 ```
 
-## Concept: `if else` statement
+## Concept: `elif` statement
 
-Using `if-else` allows us to split all comparisons into two categories - either the comparison is true or false (not true).
+Using `elif` allows us to split all comparisons into two categories - either the comparison is true or false (not true).
 
 What if we needed to split a comparison into three or four categories?
 

@@ -30,12 +30,12 @@ def on_button_pressed():
 controller.any_button.on_event(ControllerButtonEvent.PRESSED, on_button_pressed)
 ```
 
-We will discuss this in more detail later, but for now we just need to know that whatever is below `on_button_pressed()` will happen each time a button (`controller:A`, `controller:up`, and so on) is pressed.
+We will discuss this in more detail later, but for now we just need to know that whatever is below `on_button_pressed()` will happen each time a button (`A`, `up`, and so on) is pressed.
 
 ### Project #1: Counting button presses
 
 1. Review the code below
-2. Create a new project and name it “button count”
+2. Create a new project and name it `button_count`
 3. Create the sample code and run the code
 
 ```python
@@ -47,11 +47,8 @@ controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 Notice that the score pops up in the top right corner as soon as it is used for the first time - that is one benefit of using the `info.score()` function to keep track of the points the player has earned. Next, we will add in code to in order to create a timer, to see some of the other benefits of the `info` code.
 
-### Student Task #1: 10 second button smash
-
-1. Start with the code saved as "button count" in the prior example
-2. Add in a `info.start_countdown(10)`
-3. Run the code you created in task #1 a few times, and try to get different scores. Notice the benefits of using both the `info.start_countdown(10)` and the `info.change_score_by(1)` - the countdown creates a timer that counts down to 0, and then ends the game at that point. The score keeps track of the value for you which is shown in the top right corner. When the game is over, the `info.score()` maintains a `info.high_score()` automatically through multiple runs of the game.
+1. Add in a `info.start_countdown(10)`
+2. Run the code you created in task #1 a few times, and try to get different scores. Notice the benefits of using both the `info.start_countdown(10)` and the `info.change_score_by(1)` - the countdown creates a timer that counts down to 0, and then ends the game at that point. The score keeps track of the value for you which is shown in the top right corner. When the game is over, the `info.score()` maintains a `info.high_score()` automatically through multiple runs of the game.
 
 ## Topic: Using `info.life()`
 

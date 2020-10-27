@@ -113,21 +113,21 @@ If any statement is equal to `False`, then the code indented under that `if` sta
 
 ## Project 1: scoring_if (if)
 
-1. Create a new project called `scoring_if`
+1. Create a new project called `if_scoring_if`
 2. Create a Sprite
 3. When the player presses the A button, increase the score by 1
 4. When the player presses the B button, if the player’s score is less than 10, make the Sprite say something
 
 ## Project 2: follow_me (if)
 
-1. Start a new project called `follow_me`
+1. Start a new project called `if_follow_me`
 2. Create 2 sprites, a leader and a follower
 3. Set the x position of the leader at a random value between 100 and 140 and set the x position of the follower at 20.
 4. Make it so that when the player presses the A button, if the leader’s x position is greater than the follower’s, then make the follower change their x position by 10
 
 ## Project 3: equal_and_greater_than (multiple ifs)
 
-1. Create a new project called `equal_and_greater_than`
+1. Create a new project called `if_equal_and_greater_than`
 2. Create a sprite
 3. Make it so that when the player presses the A button, the score increases by 1
 4. In this event, if the player’s score is above 10, make the sprite congratulate the player on their high score
