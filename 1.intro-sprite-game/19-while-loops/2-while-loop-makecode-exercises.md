@@ -50,16 +50,16 @@ game.splash("Correct!")
 game.over(True)
 ```
 
-1. Create a new project called: `checking_math`
+1. Create a new project called: `while_checking_math`
 2. Put in the sample code above
 3. Create a new variable called `second_value` and give it a random value between 1 and 5.
 4. Change the `game.splash()` screen from "I'm thinking of a number between 1 and 5" to "Answer the question!"
 5. Change the while loop to check for the result of `value + second_value` instead of just `value`
 6. Change the `int(game.ask_for_string()` value to instead ask for the sum of `value` and `second_value` (make sure to include what those two values are in the message)
 
-## Project #2 - fireballs
+## Project #2: fireballs
 
-1. Create a new project called `fireballs`.
+1. Create a new project called `while_fireballs`.
 2. Add the following code to your project.
 
 ```python
