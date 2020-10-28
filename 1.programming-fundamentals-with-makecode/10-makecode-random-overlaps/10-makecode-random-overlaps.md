@@ -89,7 +89,7 @@ my_sprite = sprites.create(img("""
 
 my_sprite.set_position(randint(15, 145), randint(15, 105))
 hat.set_position(35, 60)
-```
+    ```
 
 ### 1.2: Check for random overlap with many sprites
 

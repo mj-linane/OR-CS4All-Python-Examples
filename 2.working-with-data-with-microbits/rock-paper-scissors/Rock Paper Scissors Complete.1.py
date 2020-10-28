@@ -32,7 +32,7 @@ def Setup():
 
 
 def generate_rolls():
-    # Because the variables were initilized globally, we need to use the global keyword
+    # Because the variables were initialized globally, we need to use the global keyword
     global player1_roll
     global player2_roll
     global roll_options
