@@ -23,7 +23,7 @@ Complete the examples and activities on: [MakeCode Arcade](https://arcade.makeco
 
 ## Project #1: particle_physics
 
-1. Create a project called `particle_physics`
+1. Create a project called `particles_physics`
 2. Use the examples in the two lessons above to write a program that uses:
    1. adds physics using:
       1. velocity (`vx`,`vy`)
@@ -33,3 +33,5 @@ Complete the examples and activities on: [MakeCode Arcade](https://arcade.makeco
       2. and/or `def sprites.create_projectile_from_sprite(img: Image, sprite: Sprite, vx: number, vy: number)`
 
 ## Optional Challenge
+
+Use a `while` or `for` loop in your program.
