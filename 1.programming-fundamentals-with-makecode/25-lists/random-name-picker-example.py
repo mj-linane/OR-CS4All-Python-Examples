@@ -2,14 +2,14 @@ import random
 
 
 def pick_person():
-    NumberOfPeople = int(
+    number_of_people = int(
         input("How many people do you want to randomly pick from?\n"))
-    peopleslist = []
-    for i in range(1, NumberOfPeople + 1):
+    people = []
+    for i in range(1, number_of_people + 1):
         print("What is the name of person %d?" % i)
-        peopleslist.append(input())
-    pick = random.randint(0, len(peopleslist))
-    print("The chosen one is " + peopleslist[pick])
+        people.append(input())
+    pick = random.randint(0, len(people))
+    print("The chosen one is " + people[pick])
 
     print("Would you like to go again? [y/n]")
     reset = input().lower()

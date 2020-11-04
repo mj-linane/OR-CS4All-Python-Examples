@@ -1,10 +1,10 @@
 import random
 # CREATING A LIST
-mixedlist = ['names', 10, ['another list', 'of stuff']]
+mixed_list = ['names', 10, ['another list', 'of stuff']]
 
 favorites = ["pie", "dogs", "computers"]
 
-notfavorites = ["cats", "teaching history"]
+not_favorites = ["cats", "teaching history"]
 
 # PRINT A LIST
 x = favorites
@@ -41,10 +41,12 @@ favorites.pop()
 x = favorites = ["pie", "dogs", "computers"] + ["cats", "teaching history"]
 
 # or using the + operator on the variables
-x = favorites + notfavorites
+x = favorites + not_favorites
+#or
+x = favorites += not_favorites
 
 # CHECK FOR COMMON ITEMS IN 2 LISTS
-x = any(item in favorites for item in notfavorites)
+x = any(item in favorites for item in not_favorites)
 if x == True:
     print("True")
 else:
@@ -55,16 +57,8 @@ if 3 in favorites:
     print('its there!')
 
 # TO PERFORM AN ACTION ON EACH ITEM IN THE LIST
-# for item in favorites:
-#     print(item)
+for item in favorites:
+    print(item)
 
 # SORT A LIST
 print(favorites.sort())
-
-# Guest List App
-# guestlist = []
-# while len(guestlist)<5:
-#   username = input('Enter Guest Name')
-#   print('REGISTERED')
-#   guestlist.append('username')
-# print('SOLD OUT')
