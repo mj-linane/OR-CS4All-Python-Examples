@@ -17,7 +17,7 @@ mixed_list = ['names', 10, ['another list', 'of stuff']]
 
 favorites = ["pie", "dogs", "computers"]
 
-not_favorites = ["cats", "teaching history"]
+dislikes = ["cats", "teaching history"]
 
 # PRINT A LIST
 x = favorites
@@ -54,12 +54,12 @@ favorites.pop()
 x = favorites = ["pie", "dogs", "computers"] + ["cats", "teaching history"]
 
 # or using the + operator on the variables
-x = favorites + not_favorites
+x = favorites + dislikes
 #or
-x = favorites += not_favorites
+x = favorites += dislikes
 
 # CHECK FOR COMMON ITEMS IN 2 LISTS
-x = any(item in favorites for item in not_favorites)
+x = any(item in favorites for item in dislikes)
 if x == True:
     print("True")
 else:
