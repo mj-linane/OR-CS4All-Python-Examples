@@ -1,4 +1,5 @@
 import random
+
 # CREATING A LIST
 mixed_list = ['names', 10, ['another list', 'of stuff']]
 
@@ -22,7 +23,7 @@ x = favorites[random.randint(0, 2)]
 '''
 get length of the list and -1 because the index position will always be 1 less than the total number of items in the list
 '''
-x = favorites[random.randint(0, len(favorites)-1)]
+x = favorites[random.randint(0, len(favorites) - 1)]
 print(x)
 
 # ADD ITEMS TO THE END OF THE LIST
@@ -42,7 +43,7 @@ favorites = ["pie", "dogs", "computers"] + ["cats", "teaching history"]
 
 # or using the + operator on the variables
 x = favorites + not_favorites
-#or
+# or
 favorites += not_favorites
 
 # CHECK FOR COMMON ITEMS IN 2 LISTS

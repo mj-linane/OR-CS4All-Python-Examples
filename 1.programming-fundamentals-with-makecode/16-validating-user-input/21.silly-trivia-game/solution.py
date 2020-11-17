@@ -28,7 +28,6 @@ print("If poet ee cummings were to email you, he'd address you as " + name.lower
 
 print("But if ee were mad, he'd call you " + name.upper())
 
-
 # Part 3: Annoying Child
 """
 Have the screen say, "if a child were to try and get your attention, they might do it as" and print their name 5 times.
@@ -36,14 +35,12 @@ Have the screen say, "if a child were to try and get your attention, they might 
 repeat_Name = (name + " ") * 5
 print("If a small child were to try and get your attention, they might do it as " + repeat_Name)
 
-
 # Part 4: Age In Seconds
 """
 Print to the screen the user's age in seconds.
 """
 seconds = int(age) * 60 * 60 * 24 * 365
 print("You're over " + str(seconds) + " seconds old.")
-
 
 # Part 5: Weight Calculation
 """

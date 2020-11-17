@@ -109,7 +109,7 @@ class Dog(object):
 
 # PART 3: CREATING MULTIPLE OBJECTS
 beagle = Dog()
-poodle = Dog("Ghost", 2)
+poodle = Dog()
 
 # All copies inherit the attributes and behaviors of their parent templates
 beagle.bark()

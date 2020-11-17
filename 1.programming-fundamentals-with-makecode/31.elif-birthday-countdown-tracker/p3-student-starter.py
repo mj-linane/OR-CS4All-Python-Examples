@@ -1,5 +1,6 @@
 # Birthday Countdown Tracker
 import datetime
+
 """
 - Keep a list of people and their birthdays
 - Calculate days until their birthdays
@@ -50,8 +51,8 @@ def report_days_left(person):
     # Check for difference
     if num_days == 0:  # If birthday is today
         return (
-            person.capitalize()
-            + "'s birthday is today!"
+                person.capitalize()
+                + "'s birthday is today!"
         )
 
 

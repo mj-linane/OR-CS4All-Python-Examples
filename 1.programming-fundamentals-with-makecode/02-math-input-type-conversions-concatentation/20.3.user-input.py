@@ -8,4 +8,3 @@ print("Hello ", name)
 
 # Method 2
 print("Hello " + name)
-

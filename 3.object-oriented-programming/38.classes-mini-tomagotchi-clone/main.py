@@ -117,7 +117,8 @@ def main():
 
         # teach your pet new word
         elif choice == "3":
-            my_pet.teach()
+            new_word = input("What is the new word?")
+            my_pet.teach(new_word)
 
         # play with your pet
         elif choice == "4":

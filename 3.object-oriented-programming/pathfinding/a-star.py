@@ -25,7 +25,7 @@ def manhattan(point, point2):
                                                        point2.point[0])
 
 
-def aStar(start, goal, grid):
+def a_star(start, goal, grid):
     # The open and closed sets
     openset = set()
     closedset = set()
@@ -80,7 +80,7 @@ def next_move(pacman, food, grid):
         for y in range(len(grid[x])):
             grid[x][y] = Node(grid[x][y], (x, y))
     # Get the path
-    path = aStar(grid[pacman[0]][pacman[1]], grid[food[0]][food[1]], grid)
+    path = a_star(grid[pacman[0]][pacman[1]], grid[food[0]][food[1]], grid)
     # Output the path
     print(len(path) - 1)
     for node in path:

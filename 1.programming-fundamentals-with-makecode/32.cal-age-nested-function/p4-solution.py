@@ -42,23 +42,23 @@ def report_person_days_left(name):
     # Check for difference
     if num_days == 0:
         return (
-            name.capitalize()
-            + "'s birthday is today!"
+                name.capitalize()
+                + "'s birthday is today!"
         )
     elif num_days < 0:
         num_days = num_days + 365
         return (
-            name.capitalize()
-            + "'s birthday is in "
-            + str(num_days)
-            + " days."
+                name.capitalize()
+                + "'s birthday is in "
+                + str(num_days)
+                + " days."
         )
     else:
         return (
-            name.capitalize()
-            + "'s birthday is in "
-            + str(num_days)
-            + " days."
+                name.capitalize()
+                + "'s birthday is in "
+                + str(num_days)
+                + " days."
         )
 
 
@@ -79,17 +79,17 @@ def report_person_age_turning(name):
     # TODO: WRITE OUT RESULTS
     if num_days == 0:
         return (
-            name.capitalize() +
-            " turns " +
-            str(age) +
-            " today."
+                name.capitalize() +
+                " turns " +
+                str(age) +
+                " today."
         )
     else:
         return (
-            name.capitalize() +
-            " is turning " +
-            str(age) +
-            "."
+                name.capitalize() +
+                " is turning " +
+                str(age) +
+                "."
         )
 
 

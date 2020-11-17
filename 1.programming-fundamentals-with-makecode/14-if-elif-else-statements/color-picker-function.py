@@ -1,4 +1,5 @@
 import random
+
 colors = ['red', 'green', 'blue']
 
 
@@ -10,7 +11,7 @@ def commentary(color):
     elif color == 'bee purple':
         return "I don't know what it is, but only bees can see it."
     else:
-        return "I've never heard of the color",  color
+        return "I've never heard of the color", color
 
 
 comment = commentary(random.choice(colors))

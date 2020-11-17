@@ -18,6 +18,7 @@ tell the player how many times it took to guess
 """
 
 import random
+
 print("Welcome to the random number guesser")
 print("Guess the right number between 1 and 100")
 

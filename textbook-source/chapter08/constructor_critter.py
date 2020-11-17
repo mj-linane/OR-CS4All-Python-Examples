@@ -2,12 +2,15 @@
 # Demonstrates constructors
 
 class Critter(object):
-    """A virtual pet""" 
+    """A virtual pet"""
+
     def __init__(self):
         print("A new critter has been born!")
 
-    def talk(self):
+    @staticmethod
+    def talk():
         print("\nHi.  I'm an instance of class Critter.")
+
 
 # main
 crit1 = Critter()

@@ -1,6 +1,7 @@
 # SETUP CODE -- Don't Change
 import turtle
 import random
+
 wn = turtle.Screen()  # Set up the window and its attributes
 turtle = turtle.Turtle()  # Creates the turtle, named "turtle"
 
@@ -11,6 +12,8 @@ turtle.pensize(5)  # Width of the pen
 turtle.left(90)  # Sets turtle to start facing up
 turtle.speed('fastest')  # Turtle drawing speed
 turtle.tracer(0, 0)  # turns off the animation
+
+
 # COMPLETE YOUR CODE Enter your code below
 
 
@@ -25,14 +28,18 @@ def draw_all_seagrass():
 # To do: Repeatedly draw sea stars
 def draw_all_seastars():
     for n in range(5):
+        pass
 
-        # To do: Repeatedly draw fish
+
+# To do: Repeatedly draw fish
 
 
 def draw_all_fish():
     for n in range(5):
+        pass
 
-        # To do: Repeatedly draw bubbles
+
+# To do: Repeatedly draw bubbles
 
 
 def draw_all_bubbles():
@@ -108,7 +115,7 @@ def draw_fish(size, red, green, blue):
 
 # Bubbles are turtle.dots
 def draw_bubble(size):
-    turtle.color(100, 100, 255, .2)
+    # turtle.color(100, 100, 255, .2)
     turtle.dot(size)
 
 

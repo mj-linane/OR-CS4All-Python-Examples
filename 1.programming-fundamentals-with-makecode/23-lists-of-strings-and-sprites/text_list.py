@@ -17,7 +17,7 @@ mySprite = sprites.create(img("""
         . . . f f f f f f f f f f . . .
         . . . . . f f . . f f . . . . .
     """),
-    SpriteKind.player)
+                          SpriteKind.player)
 text_list = ["Hello", "I am", "the", "Princess"]
 
 for text in text_list:

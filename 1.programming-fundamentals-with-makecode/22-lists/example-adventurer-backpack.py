@@ -9,16 +9,16 @@ print(len(backpack))
 # Test if Item Is In Backpack
 life = 20
 if "mana potion" in backpack:
-  print("I am healed!")
+    print("I am healed!")
 else:
-  life -= 2
-  print(life)
+    life -= 2
+    print(life)
 
 # Indexing List
 
 # -3    -2    -1
 ["a", "b", "c"]
-  # 0    1    2
+# 0    1    2
 
 # Find an Item At An Index Position
 print(backpack[-1])
