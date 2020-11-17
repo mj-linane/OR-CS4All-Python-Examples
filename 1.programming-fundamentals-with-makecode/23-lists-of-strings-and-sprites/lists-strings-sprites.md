@@ -50,7 +50,8 @@ my_sprite.say(text_list[3], 300)
 pause(400)
 ```
 
-In the example above, we have the sprite say something every, pause, and the say another thing off the list `text_list`. This is redundant. We don't want to repeat ourselves. Therefore, lets shorten it by making a `for` loop for the `text_list` sayings.
+In the example above, we have the sprite say something every, pause, and the say another thing off the list
+ `text_list`. This is redundant. We don't want to repeat ourselves. Therefore, lets shorten it by making a `for` loop for the `text_list` sayings.
 
 ```python
 for text in text_list:
@@ -91,7 +92,7 @@ Also, notice that when we access the items in the list by their index position, 
    3. set the enemy to be a ghost, pause for a second and then make it so the sprite isn’t a ghost: `enemy_sprite_name.set_flag(SpriteFlag.GHOST, True)`
 5. Challenge: add an on A button pressed event. When the A button is pressed, use ask for string with text and list add value to end to add a word the player chooses into text list.
 
-## lists of Sprites
+## Lists of Sprites
 
 So far we have used lists of numbers and strings. We will see that lists can be used with any variable type, including sprites.
 
@@ -109,8 +110,6 @@ Creating lists of sprites follow a similar process as creating lists of numbers 
 @namespace
 class SpriteKind:
     Asteroid = SpriteKind.create()
-
-my_sprite_list = []
 
 def on_a_pressed():
     for value in my_sprite_list:
@@ -358,11 +357,13 @@ for i in range(100):
     firework.set_flag(SpriteFlag.GHOST, True)
 ```
 
-### Practice #4: Tracking with a Single Sprite and All Sprites of A Kind
+## Tracking Single and Multiple Sprites
 
 It is fairly common to want sprites to follow other sprites; for example, enemy sprites that want to damage the player, or faithful ally accompanying the player on an adventure.
 
 We can implement this behavior easily using logic blocks in an on game update event.
+
+### Project #1: Tracking with a Single Sprite and All Sprites of A Kind
 
 1. Create a new project called `lists-its-following`
 2. Create the sample code and run the code
@@ -415,10 +416,22 @@ if enemy.y != my_sprite.y:
 
 This is also a great occasion to use lists - that way, we can have more than a single enemy follow the player.
 
-#### All Sprites of Kind
+Go onto the next challenge and add that code to this project.
+
+### Project #2: All Sprites of Kind
+
+Continue using the code above.
 
 1. Add a `for n in range()` loop that creates 20 enemies in random positions on the screen.
 2. In the on game update event function (`def on_on_update():`), create a new list of `sprites.all_of_kind(SpriteKind.Enemy)` to get all of the `Enemies`.
 3. Use a `for-in` loop on the list to make all the enemies follow the player, not just the last one that was created.
 4. Challenge: add an on overlap event between two enemies, that moves both enemies between -2 and 2 pixels in both directions, so that the enemies no longer stack on top of each other
 
+#### Limiting Powerups
+
+Power ups should feel like special bonuses, but they show up randomly - in some cases, you might even end up with three or four on the screen at the same time!
+
+To address this, we can limit the number of PowerUps that are on the screen at once. When a PowerUp Sprite would be
+ created, instead get an array of all existing sprites of kind PowerUp. If the length of that array is less than 2, create a PowerUp like normal. Otherwise, do not create a PowerUp Sprite.
+
+With this, you will avoid creating new PowerUps when there are too many on the screen. This brings up an extra option for customizing your game, as well - you can increase the rate at which PowerUps are created without making the game too easy, which provides a benefit for gathering PowerUps as quickly as possible - the faster they are gathered, the faster more will come.
