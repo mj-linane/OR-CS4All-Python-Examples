@@ -27,7 +27,6 @@ def on_a_pressed():
     game.splash("X=" + str(player1.x) + " Y=" + str(player1.y))
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
-player1: Sprite = None
 game.splash("Sprite Walker", "\"A\" for coordinates")
 player1 = sprites.create(img("""
         1 1 1

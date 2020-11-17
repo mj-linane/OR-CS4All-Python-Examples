@@ -122,7 +122,7 @@ def on_a_pressed():
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_b_pressed():
-    global player_2_wins
+    global player_b_wins
     player_b_wins = player_2_wins + 1
 controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
 

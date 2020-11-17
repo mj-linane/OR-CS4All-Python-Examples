@@ -104,7 +104,7 @@ def on_a_pressed():
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_b_pressed():
-    global player_2_wins
+    global player_b_wins
 
 controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
 
@@ -132,7 +132,7 @@ controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_b_pressed():
     global player_2_wins
-    player_2_wins = player_2_wins + 1
+    player_b_wins = player_2_wins + 1
 controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
 
 def on_up_pressed():
@@ -180,7 +180,7 @@ def on_down_pressed():
     global player_b_wins
     global player_ties
 
-    game.splash("Rounds played: " + str((player_a_wins + player_2_wins + player_ties)))
+    game.splash("Rounds played: " + str((player_a_wins + player_b_wins + player_ties)))
     pass
 controller.down.on_event(ControllerButtonEvent.PRESSED, on_down_pressed)
 ````

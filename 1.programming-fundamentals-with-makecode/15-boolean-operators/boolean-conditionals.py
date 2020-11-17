@@ -3,10 +3,10 @@
 is_math = False
 
 
-def somefun():
+def some_fun():
     dog = True
     return dog
 
 
-donemath = somefun()
-print(donemath)
+done_math = some_fun()
+print(done_math)

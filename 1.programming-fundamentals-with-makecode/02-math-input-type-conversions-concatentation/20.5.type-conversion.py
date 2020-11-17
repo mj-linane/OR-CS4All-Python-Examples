@@ -1,4 +1,5 @@
 # TYPE CONVERSIONS
+
 # Convert String to Integer
 age = 30
 age_number = int(age)

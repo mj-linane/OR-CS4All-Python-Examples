@@ -1,4 +1,4 @@
-# STRING CONCATENTATION (Combining)
+# STRING CONCATENATION (Combining)
 
 # Combining Text
 name = "MJ"
