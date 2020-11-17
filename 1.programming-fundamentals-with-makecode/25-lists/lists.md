@@ -56,7 +56,7 @@ x = favorites = ["pie", "dogs", "computers"] + ["cats", "teaching history"]
 # or using the + operator on the variables
 x = favorites + dislikes
 #or
-x = favorites += dislikes
+favorites += dislikes
 
 # CHECK FOR COMMON ITEMS IN 2 LISTS
 x = any(item in favorites for item in dislikes)

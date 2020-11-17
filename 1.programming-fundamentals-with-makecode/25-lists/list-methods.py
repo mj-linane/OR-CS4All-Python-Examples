@@ -38,12 +38,12 @@ x = favorites
 favorites.pop()
 
 # COMBINING LISTS
-x = favorites = ["pie", "dogs", "computers"] + ["cats", "teaching history"]
+favorites = ["pie", "dogs", "computers"] + ["cats", "teaching history"]
 
 # or using the + operator on the variables
 x = favorites + not_favorites
 #or
-x = favorites += not_favorites
+favorites += not_favorites
 
 # CHECK FOR COMMON ITEMS IN 2 LISTS
 x = any(item in favorites for item in not_favorites)

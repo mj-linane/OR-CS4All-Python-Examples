@@ -66,7 +66,7 @@ WORDS = ["BEAR", "PIZZA", "SNAKE", "WASHINGTON", "MOON"]
 # Pick a word
 word = random.choice(WORDS)
 
-# One dash for each lettter in a word to be guessed
+# One dash for each letter in a word to be guessed
 current_guess = "-" * len(word)
 
 # Tracks wrong guesses
