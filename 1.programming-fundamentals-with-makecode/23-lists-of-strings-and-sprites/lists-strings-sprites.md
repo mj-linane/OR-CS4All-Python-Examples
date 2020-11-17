@@ -319,7 +319,7 @@ origin = sprite_list[randint(0, len(sprite_list) - 1)]
 
 5. Challenge: change the on any button pressed event to only trigger when the A button is pressed, and make a on B button pressed event that will create a new firework. Make sure to use either a function or an on created sprite of kind event to reduce the redundancy between the new event and the code in the main program.
 
-*Completed code without challenge*
+##### Completed code without challenge
 
 ```python
 @namespace
