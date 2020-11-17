@@ -6,6 +6,7 @@ course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.programming-fund
 lesson number: ''
 ---
 
+
 In the previous lesson, we learned that lists can be used to keep track of an indefinite number of values, as well as some of the basic ways in which developers can interact with the lists.
 
 In this lesson, we are going to practice some more with lists of specific data types.
