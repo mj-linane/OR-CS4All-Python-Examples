@@ -20,7 +20,7 @@ In this activity, we will identify some ways in which we can use lists of string
 2. Copy/paste the sample code below
 
 ```python
-text_list = []
+text_list = ["Hello", "I am", "the", "Princess"]
 my_sprite = sprites.create(img("""
         . . . . . . 5 . 5 . . . . . . .
         . . . . . f 5 5 5 f f . . . . .
@@ -40,7 +40,6 @@ my_sprite = sprites.create(img("""
         . . . . . f f . . f f . . . . .
     """),
     SpriteKind.player)
-text_list = ["Hello", "I am", "the", "Princess"]
 my_sprite.say(text_list[0], 300)
 pause(400)
 my_sprite.say(text_list[1], 300)
@@ -70,66 +69,10 @@ The changes in this task make the code a lot easier to read, and demonstrate a v
 Another way in which you can use string lists in your games is to create reactions to different events - for example, the player running into another character, or losing a life. This can be used both to personalize your game, and to make the game feel more alive, as the characters respond ‘randomly’ to the player’s actions.
 
 1. Create a new project called `lists-random-reactions`
-2. Review the code below.
+2. Use the same code as `practice #1`
 
 ```python
-text_list = []
-def on_hit_tile(sprite):
-    my_sprite.say(text_list[randint(0, len(text_list) - 1)], 250)
-    my_sprite.set_position(50, 50)
-scene.on_hit_tile(SpriteKind.player, 15, on_hit_tile)
-
-scene.set_tile_map(img("""
-    f f f f f f f f f f
-    f e e e e e e e e f
-    f e e e e e e e e f
-    f e e e e e e e e f
-    f e e e e e e e e f
-    f e e e e e e e e f
-    f e e e e e e e e f
-    f f f f f f f f f f
-"""))
-scene.set_tile(15,
-    img("""
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-        f f f f f f f f f f f f f f f f
-    """),
-    True)
-my_sprite = sprites.create(img("""
-        . . . . . . 5 . 5 . . . . . . .
-        . . . . . f 5 5 5 f f . . . . .
-        . . . . f 1 5 2 5 1 6 f . . . .
-        . . . f 1 6 6 6 6 6 1 6 f . . .
-        . . . f 6 6 f f f f 6 1 f . . .
-        . . . f 6 f f d d f f 6 f . . .
-        . . f 6 f d f d d f d f 6 f . .
-        . . f 6 f d 3 d d 3 d f 6 f . .
-        . . f 6 6 f d d d d f 6 6 f . .
-        . f 6 6 f 3 f f f f 3 f 6 6 f .
-        . . f f d 3 5 3 3 5 3 d f f . .
-        . . f d d f 3 5 5 3 f d d f . .
-        . . . f f 3 3 3 3 3 3 f f . . .
-        . . . f 3 3 5 3 3 5 3 3 f . . .
-        . . . f f f f f f f f f f . . .
-        . . . . . f f . . f f . . . . .
-    """),
-    SpriteKind.player)
-controller.move_sprite(my_sprite, 100, 100)
-text_list = ["oww", "no walls", "oh no", "I stubbed my toe"]
+my_sprite.say(text_list[randint(0, len(text_list) - 1)], 250)
 ```
 
 Notice: we are able to get a random item off the `text_list` by accessing a random index position and getting the string in that position:  `my_sprite.say(text_list[randint(0, len(text_list) - 1)], 250)`
@@ -277,13 +220,20 @@ for i in range(10):
 
 Notice how we can create sprites of a certain kind using `sprites.all_of_kind(SpriteKind.Asteroid)`
 
+We can then run a `for` loop on every sprite of that kind. We can then set its position to be a random value.
+
+Notice, we also use the `scene.screen_width()` and `scene.screen_height` to automatically place those sprites inside of the screen boundaries.
+
 ```python
-  for value in sprites.all_of_kind(SpriteKind.Asteroid):
-        value.set_position(randint(0, scene.screen_width()),
-            randint(0, scene.screen_height()))
+for value in sprites.all_of_kind(SpriteKind.Asteroid):
+    value.set_position(randint(0, scene.screen_width()),
+        randint(0, scene.screen_height()))
 ```
 
 ### Practice #3: fireworks
+
+1. Create a new project called `lists-fireworks`
+2. Review and run the code below
 
 ```python
 @namespace
@@ -300,8 +250,8 @@ def on_a_pressed():
             SpriteKind.player,
             firework)
         firework.set_flag(SpriteFlag.GHOST, True)
-        projectile.image.fill(randint(1, 14))
-    firework.destroy()
+        projectile.image.fill(randint(1, 14)) # Fill here is used to randomize the color of the projectiles
+        firework.destroy()
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 firework = sprites.create(img("""
@@ -310,8 +260,7 @@ firework = sprites.create(img("""
         1 1 1
     """),
     SpriteKind.Firework)
-firework.set_position(randint(0, scene.screen_width()),
-    randint(0, scene.screen_height()))
+firework.set_position(randint(0, scene.screen_width()), randint(0, scene.screen_height()))
 firework.set_flag(SpriteFlag.GHOST, True)
 ```
 
@@ -319,20 +268,20 @@ The example above creates a firework at a random position on the screen, and the
 
 * The firework can be set off again, creating an explosion from nothing
 * You can only really make one firework
-* Using list of sprites of kind, we can easily address both of these issues
+
+Using list of sprites of kind, we can easily address both of these issues
 
 #### Bigger and Better Fireworks
 
-1. Add a repeat loop in the on start that will create `100` fireworks at the bottom of the script.
+1. Add a repeat loop in the on start that will create `100` fireworks at the bottom of the script. It would look like the code below.
 
 ```python
-projectile = None
 sprite_list = []
 for i in range(100):
     firework = sprites.create(img("""
             1 1 1
-                    1 2 1
-                    1 1 1
+            1 2 1
+            1 1 1
         """),
         SpriteKind.Firework)
     firework.set_position(randint(0, scene.screen_width()),
@@ -401,12 +350,11 @@ sprite_list = []
 for i in range(100):
     firework = sprites.create(img("""
             1 1 1
-                    1 2 1
-                    1 1 1
+            1 2 1
+            1 1 1
         """),
         SpriteKind.Firework)
-    firework.set_position(randint(0, scene.screen_width()),
-        randint(0, scene.screen_height()))
+    firework.set_position(randint(0, scene.screen_width()), randint(0, scene.screen_height()))
     firework.set_flag(SpriteFlag.GHOST, True)
 ```
 
@@ -420,7 +368,7 @@ We can implement this behavior easily using logic blocks in an on game update ev
 2. Create the sample code and run the code
 
 ```python
-player = sprites.create(img("""
+my_sprite = sprites.create(img("""
         1 . . . 1
         1 . . . 1
         . . . . .
@@ -429,7 +377,7 @@ player = sprites.create(img("""
         . 1 1 1 .
     """),
     SpriteKind.player)
-controller.move_sprite(player, 100, 100)
+controller.move_sprite(my_sprite, 100, 100)
 enemy = sprites.create(img("""
         2 . . 2
         . . . .
@@ -441,22 +389,36 @@ enemy.x += randint(-40, 40)
 enemy.y += randint(-40, 40)
 
 def on_on_update():
-    if player.x > enemy.x:
+    if my_sprite.x > enemy.x:
         enemy.vx = 2
     else:
         enemy.vx = -2
-    if player.y > enemy.y:
+    if my_sprite.y > enemy.y:
         enemy.vy = 2
     else:
         enemy.vy = -2
 game.on_update(on_on_update)
 ```
 
+Notice the velocity. It remains constant at 2. We can write this a bit differently. We can increase the speed the further away the enemy sprite is from the player.
+
+In the code below, we would delete all of the `if-else` statements inside of the `on_on_update()` function and replace them with the code below.
+```python
+if enemy.x != my_sprite.x:
+    enemy.vx = my_sprite.x - enemy.x
+
+if enemy.y != my_sprite.y:
+    enemy.vy =my_sprite.y - enemy.y
+
+
+```
+
 This is also a great occasion to use lists - that way, we can have more than a single enemy follow the player.
 
 #### All Sprites of Kind
 
-1. Add a repeat 20 times loop that creates 20 enemies in random positions on the screen.
-2. In the on game update event function (`def on_on_update():`), use `sprites.all_of_kind(Enemy)` in a loop to make all the enemies follow the player, not just the last one that was created.
-3. Challenge: add an on overlap event between two enemies, that moves both enemies between -2 and 2 pixels in both directions, so that the enemies no longer stack on top of each other
-What did we learn?
+1. Add a `for n in range()` loop that creates 20 enemies in random positions on the screen.
+2. In the on game update event function (`def on_on_update():`), create a new list of `sprites.all_of_kind(SpriteKind.Enemy)` to get all of the `Enemies`.
+3. Use a `for-in` loop on the list to make all the enemies follow the player, not just the last one that was created.
+4. Challenge: add an on overlap event between two enemies, that moves both enemies between -2 and 2 pixels in both directions, so that the enemies no longer stack on top of each other
+
