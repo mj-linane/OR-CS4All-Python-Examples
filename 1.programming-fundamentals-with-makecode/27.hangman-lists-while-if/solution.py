@@ -79,7 +79,7 @@ used_letters = []
 print("Welcome to Hangman")
 print("Try to Guess The Word")
 
-while wrong_guesses < (MAX_WRONG) and current_guess != word:
+while wrong_guesses < MAX_WRONG and current_guess != word:
     print(HANGMAN[wrong_guesses])
     print("You have used the following letters: ", used_letters)
     print("So far, the word is: ", current_guess)

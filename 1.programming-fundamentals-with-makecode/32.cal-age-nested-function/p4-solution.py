@@ -26,7 +26,7 @@ def get_days_until_bday(name):
     birthday = datetime.date(
         yr, people[name]['month'], people[name]['day'])
 
-    # Format today's date for comparision
+    # Format today's date for comparison
     today_date = datetime.date(yr, month, day)
 
     # Calculate difference in days
@@ -40,26 +40,19 @@ def report_person_days_left(name):
     num_days = get_days_until_bday(name)
 
     # Check for difference
-    if num_days == 0:
-        return (
-                name.capitalize()
-                + "'s birthday is today!"
-        )
+    if num_days == 0:  # If birthday is today
+        greeting_ending = "'s birthday is today!"
+
+    # Past birthdays
     elif num_days < 0:
         num_days = num_days + 365
-        return (
-                name.capitalize()
-                + "'s birthday is in "
-                + str(num_days)
-                + " days."
-        )
+        greeting_ending = "'s birthday is in " + str(num_days) + " days."
+
+    # Future birthdays
     else:
-        return (
-                name.capitalize()
-                + "'s birthday is in "
-                + str(num_days)
-                + " days."
-        )
+        greeting_ending = "'s birthday is in " + str(num_days) + " days."
+
+    return name.capitalize() + greeting_ending
 
 
 def report_person_age_turning(name):

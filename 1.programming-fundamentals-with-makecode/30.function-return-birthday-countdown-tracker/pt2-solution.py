@@ -50,10 +50,7 @@ def report_days_left(person):
 
     # Check for difference
     if num_days == 0:  # If birthday is today
-        return (
-                person.capitalize()
-                + "'s birthday is today!"
-        )
+        return person.capitalize() + "'s birthday is today!"
 
 
 print(report_days_left("TESS"))

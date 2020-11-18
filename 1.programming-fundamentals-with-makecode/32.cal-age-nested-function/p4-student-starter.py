@@ -50,28 +50,18 @@ def report_days_left(name):
 
     # Check for difference
     if num_days == 0:  # If birthday is today
-        return (
-                name.capitalize() +
-                "'s birthday is today!"
-        )
+        greeting_ending = "'s birthday is today!"
+
     # Past birthdays
     elif num_days < 0:
         num_days = num_days + 365
-        return (
-                name.capitalize() +
-                "'s birthday is in " +
-                str(num_days) +
-                " days."
-        )
+        greeting_ending = "'s birthday is in " + str(num_days) + " days."
 
     # Future birthdays
     else:
-        return (
-                name.capitalize() +
-                "'s birthday is in " +
-                str(num_days) +
-                " days."
-        )
+        greeting_ending = "'s birthday is in " + str(num_days) + " days."
+
+    return name.capitalize() + greeting_ending
 
 
 def report_all_birthdays():

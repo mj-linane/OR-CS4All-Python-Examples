@@ -17,18 +17,18 @@ print(add_answer)
 # Shortened form
 
 
-def addShort(x, y):
+def add_short(x, y):
     return x + y
 
 
-print(addShort(2, 3))
+print(add_short(2, 3))
 
 
-def addMulti(x, y):
+def add_multi(x, y):
     return (
             x +
             y
     )
 
 
-print(addMulti(2, 3))
+print(add_multi(2, 3))
