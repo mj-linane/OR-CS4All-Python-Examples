@@ -50,7 +50,7 @@ age = 35
 
 ## Coding A Score Keeper
 
-You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeping that change over the course of a gaming session. What are those variables?
+You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeper that change over the course of a gaming session. What are those variables?
 
 - The number of times the first player wins
 - The number of times the second player wins
@@ -98,6 +98,9 @@ Each time the scorekeeper presses both button A and button B at the same time to
 Add the event listeners with the following code:
 
 ```python
+player_a_wins = 0
+player_b_wins = 0
+player_ties = 0
 def on_a_pressed():
     global player_a_wins
 
@@ -131,8 +134,8 @@ def on_a_pressed():
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_b_pressed():
-    global player_2_wins
-    player_b_wins = player_2_wins + 1
+    global player_b_wins
+    player_b_wins = player_b_wins + 1
 controller.B.on_event(ControllerButtonEvent.PRESSED, on_b_pressed)
 
 def on_up_pressed():

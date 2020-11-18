@@ -8,7 +8,7 @@ lesson number: ''
 
 ## Activities
 
-1. 20 minute class - continue working on your scorekeeper app. Attempt the additional challenges if the intial app is completed.
+1. 20 minute class - continue working on your scorekeeper app. Attempt the additional challenges if the initial app is completed.
 
 ## Challenge Help
 

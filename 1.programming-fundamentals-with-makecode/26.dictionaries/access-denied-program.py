@@ -8,28 +8,22 @@ users = {}
 
 
 # WELCOME USERS
-
-
 def welcome_users():
-    return
+    pass
     # Print "Welcome To The [Make Up A Name] Security Company Console"
     # Then say "Where Security Is Our Middle Name"
 
 
 # ASK FOR INITIALS AND PASSCODE
-
-
 def ask_credentials():
     # The user would input their initials and their 4-digit passcode.
     # They are then passed into the check_credentials function to see if they are cleared for entry
-    check_credentials()
+    pass
 
 
 # CHECK USER DICTIONARY
-
-
 def check_credentials(initials, passcode):
-    return
+    pass
     # If the initials exist in the dictionary and the passcode is the correct key, grant access and print to the
     # screen "Access Granted" Tell the user "Incorrect Passcode" if they put in the wrong passcode. Tell the user
     # "User Not Found" if their initials are not found in the dictionary. Lastly, tell them to Press the enter key to

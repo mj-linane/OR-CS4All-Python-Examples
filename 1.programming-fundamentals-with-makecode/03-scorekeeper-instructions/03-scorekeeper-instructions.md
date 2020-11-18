@@ -49,7 +49,7 @@ Notice here that the “ADDRESS” is capitalized. This indicates that it is a c
 
 ## Topic 2: Coding A Score Keeper Overview
 
-You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeping that change over the course of a gaming session. What are those variables?
+You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeper that change over the course of a gaming session. What are those variables?
 
 - The number of times the first player wins
 - The number of times the second player wins
@@ -91,6 +91,9 @@ We already initialized these variables and now need to code to update the values
 Add the event listeners with the following code:
 
 ```python
+player_a_wins = 0
+player_b_wins = 0
+player_ties = 0
 def on_a_pressed():
     global player_a_wins
 

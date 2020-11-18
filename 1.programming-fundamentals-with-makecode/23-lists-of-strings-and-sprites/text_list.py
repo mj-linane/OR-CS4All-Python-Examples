@@ -1,4 +1,4 @@
-text_list = []
+text_list = ["Hello", "I am", "the", "Princess"]
 mySprite = sprites.create(img("""
         . . . . . . 5 . 5 . . . . . . .
         . . . . . f 5 5 5 f f . . . . .
@@ -18,7 +18,6 @@ mySprite = sprites.create(img("""
         . . . . . f f . . f f . . . . .
     """),
                           SpriteKind.player)
-text_list = ["Hello", "I am", "the", "Princess"]
 
 for text in text_list:
     mySprite.say(text, 300)

@@ -1,5 +1,5 @@
 ---
-title: 'Makecode Info Card vs Variables'
+title: 'MakeCode Info Card vs Variables'
 author: 'MJ Linane'
 date: '09-29-2020'
 course: 'G:\My Drive\.work-code\or-cs4all-python-lesson-plans\1.intro-programming'

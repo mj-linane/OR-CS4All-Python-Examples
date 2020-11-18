@@ -23,7 +23,7 @@ In these activities students will work with:
 
 ### Boolean Workflow
 
-![Boolean Workflow](/python_conditional_statement_workflow_colorado_state_edu.png)
+![Boolean Workflow](python_conditional_statement_workflow_colorado_state_edu.png)
 
 *Source: http://macs.cs.colostate.edu/modules/M4.A.html*
 
@@ -168,7 +168,6 @@ def on_a_pressed():
 controller.A.on_event(ControllerButtonEvent.PRESSED, on_a_pressed)
 
 def on_update_interval():
-    global projectile
     if left:
         projectile = sprites.create_projectile(img("""
                 . . . . . . . . . . . . . . . .

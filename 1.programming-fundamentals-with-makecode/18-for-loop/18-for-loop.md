@@ -158,10 +158,10 @@ def on_update_interval():
     sprites.create(sprites.space.space_asteroid0, SpriteKind.Asteroid)
 game.on_update_interval(1500, on_update_interval)
 
-def setMotion(asteroid):
+def set_motion(asteroid):
     asteroid.vx = randint(-8, 8)
     asteroid.vy = randint(35, 20)
-def setPosition(sprite, edge):
+def set_position(sprite, edge):
     sprite.x = randint(edge, screen.width - edge)
     sprite.y = 0
 

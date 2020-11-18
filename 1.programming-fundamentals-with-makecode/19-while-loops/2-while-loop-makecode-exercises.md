@@ -56,7 +56,8 @@ game.over(True)
 4. Change the `game.splash()` screen from "I'm thinking of a number between 1 and 5" to "Answer the question!"
 5. Change the while loop to check for the result of `value + second_value` instead of just `value`
 6. Change the `int(game.ask_for_string()` value to instead ask for the sum of `value` and `second_value` (make sure to include what those two values are in the message)
-   1. Remember that to combine strings and variables we can use `+`. For more information, consult the lesson on [string concatentation](./)
+   1. Remember that to combine strings and variables we can use `+`. For more information, consult the lesson on
+    [string concatenation](/1.programming-fundamentals-with-makecode/02-math-input-type-conversions-concatentation/02-sprites-variables-math.md)
 
 ## Project #2: fireballs
 

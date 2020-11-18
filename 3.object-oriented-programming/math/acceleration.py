@@ -1,25 +1,22 @@
 import math
 
-CurrentSpeed = 0
-AccelerationSteps = 0
+current_speed = 0
+acceleration_steps = 0
 
 
-def ExponentialAccelerationTo(MaxSpeed):
-    global AccelerationSteps
-    global CurrentSpeed
-    GrowthRate = .02  # Growth Rate
-    Exponent = 1
-    if CurrentSpeed < 1:
-        CurrentSpeed = 1
-    while CurrentSpeed < MaxSpeed:
+def exponential_acceleration_to(max_speed):
+    global acceleration_steps
+    global current_speed
+    growth_rate = .02  # Growth Rate
+    exponent = 1
+    if current_speed < 1:
+        current_speed = 1
+    while current_speed < max_speed:
         # Calculation of acceleration using doubling time
-        CurrentSpeed = math.ceil(CurrentSpeed*((1 + GrowthRate) ** Exponent))
-        Exponent += 1
-        if CurrentSpeed > MaxSpeed:
-            CurrentSpeed = MaxSpeed
-        AccelerationSteps += 1
-        print("Speed: ", CurrentSpeed)
-        print("Test Counter:", AccelerationSteps)
-
-
-ExponentialAccelerationTo(50)
+        current_speed = math.ceil(current_speed * ((1 + growth_rate) ** exponent))
+        exponent += 1
+        if current_speed > max_speed:
+            current_speed = max_speed
+        acceleration_steps += 1
+        print("Speed: ", current_speed)
+        print("Test Counter:", acceleration_steps)
