@@ -13,16 +13,17 @@ person1 = {
 }
 
 # GET DICTIONARY VALUE (USING KEY)
-x = person1['Name']
+print(person1['Name'])
 
 # GET ALL KEYS
-x = person1.keys()
+print(person1.keys())
 
-# for key in person1.keys():
-# print(key)
+for key in person1.keys():
+    print(key)
+
 
 # GET LENGTH OF DICTIONARY
-x = len(person1)
+print("The length of person1 is: " + str(len(person1)))
 
 # ADD NEW KEY-VALUE TO A DICTIONARY
 person1.update({'Favorite Coding Language': 'Python'})
@@ -32,19 +33,19 @@ person1['Age'] = 25
 
 # DELETE A KEY-VALUE
 del person1['Age']
+print(person1)
 
 # GET ALL VALUES
+print(person1.values())
 
-x = person1.values()
-
-# for value in person1.values():
-#   print(value)
+for value in person1.values():
+    print(value)
 
 # GETTING VALUE IN LIST INSIDE OF DICTIONARY
-x = person1['Hobbies'][0]
+print(person1['Hobbies'][0])
 
 # GETTING VALUE IN DICTIONARY INSIDE OF DICTIONARY
-x = person1['Bio']['height']
+print(person1['Bio']['height'])
 
 # COMPARE DICTIONARIES
 boys = {
@@ -64,25 +65,29 @@ for boy in boys.keys():
     else:
         print(False)
 
-# CHALLENGE #1
+# PRACTICE CHALLENGES
 """
-Create dictionary of viruses and their rate of infection
+# CHALLENGE #1
 
-R0 dictionary
+1. Create dictionary called `viruses`. 
+2. Put the name of the virus as the value
+3. Put the rate of infection as the key for each virus. 
+Virus infection rates are measure at how many people can a single person infect, represented by "R0"
+
 Seasonal Flu - 1.3
-SARS - 2-5, [2, 5]
-HIV - 2-5
-Measels - 12-16
-Coronavirus/covid-19 - 2-3
+SARS - 3.5 # true range is 2-5 
+HIV - 3.5 # true range is 2-5
+Measles - 14 # true range is 12-16
+Coronavirus/covid-19 - 2.5 #true range is 2-3
 Zombie Virus - R?
 
 """
 
-# CHALLENGE #2
 """
+# CHALLENGE #2
+
 Create 3 viruses in Python using dictionaries
 Each will have a key value pair of:
 -NAME
 -INFECTION PROBABILITY
--LETHALITY PROBABILITY
 """
