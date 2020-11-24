@@ -173,7 +173,7 @@ Virus infection rates are measure at how many people can a single person infect,
         2. Add `elif` statements that print the remaining statements for the remaining keys.
         2. Add an `else` in which the turkey says something like `sorry I am not sure what you mean`
 
-### Optional Challenges
+#### Turkey Interview Optional Challenges
 
 1. Add more than 5 key-value pairs.
 2. Set the whole interview into a `while` loop to give the user another chance at asking a question.
