@@ -157,23 +157,3 @@ Virus infection rates are measure at how many people can a single person infect,
 2. Put the name of the virus as the value
 3. Put the rate of infection as the key for each virus. 
 
-
-## Project #1 Interview with a Turkey
-1. Create a sprite called `my_turkey`
-2. Create a dictionary called `turkey_info`
-3. Put in at least 5 key-value pairs into the dictionary that tells us about that turkey. For instance, `age` or `name`.
-4. Create a dialogue sequence whereby:
-    1. Turkey greets user
-    2. Turkey asks the user what they want to know about him/her
-    3. Turkey lists off each of the keys in a long text box.
-    4. Turkey asks `what do you want to know about me?`
-    4. Game accepts user input and compares it in if-elif-else statement.
-        1. `if` the user input matches the key in the turkey dictionary, then print out the value. An
-         example print out might be: `my name is my_turkey['name']`.
-        2. Add `elif` statements that print the remaining statements for the remaining keys.
-        2. Add an `else` in which the turkey says something like `sorry I am not sure what you mean`
-
-#### Turkey Interview Optional Challenges
-
-1. Add more than 5 key-value pairs.
-2. Set the whole interview into a `while` loop to give the user another chance at asking a question.
