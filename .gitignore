@@ -11,3 +11,8 @@
 
 # Google Sheets
 *.gsheet
+
+# Pycharm
+venv
+.idea
+*.iml
