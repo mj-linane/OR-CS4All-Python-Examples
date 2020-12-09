@@ -1,5 +1,5 @@
 ---
-title: Writing Makecode Functions
+title: Writing Make Code Functions
 course: CS4ALL
 ---
 ## Writing Functions
