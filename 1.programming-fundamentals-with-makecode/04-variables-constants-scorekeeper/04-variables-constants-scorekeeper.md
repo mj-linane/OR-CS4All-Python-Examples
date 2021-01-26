@@ -8,14 +8,14 @@ lesson number: ''
 
 ## Concept 1: Constants and Variables (20 minutes)
 
-Computer programs process information. Some of the information that is input, stored, and used in a computer program has a value that is constant, meaning it does not change throughout the course of the program. An example of a constant in math is ‘pi’ because ‘pi’ has one value that never changes. Other pieces of information have values that vary or change during the running of a program. Programmers create variables to hold the value of information that may change. In a game program, a variable may be created to hold the player’s current score, since that value would change (hopefully!) during the course of the game.
+Computer programs process information. Some information that is input, stored, and used in a computer program has a value that is constant, meaning it does not change throughout the course of the program. An example of a constant in math is ‘pi’ because ‘pi’ has one value that never changes. Other pieces of information have values that vary or change during the running of a program. Programmers create variables to hold the value of information that may change. In a game program, a variable may be created to hold the player’s current score, since that value would change (hopefully!) during the course of the game.
 
 What pieces of information have values that don’t change during the course of a single day (constants)?
 What pieces of information have values that do change during the course of a single day (variables) Constants and variables can be numbers and/or text.
 
 ### How Variables are Stored
 
-Variables hold a specific type of information. A computer's memory can store many different type of variables. On MakeCode, we can keep track of numbers, strings(text), booleans, and sprites. The first time you use a variable, its type is assigned to match whatever it is holding.
+Variables hold a specific type of information. A computer's memory can store many types of variables. On MakeCode, we can keep track of numbers, strings(text), booleans, and sprites. The first time you use a variable, its type is assigned to match whatever it is holding.
 
 - A number variable could hold numerical data such as the year, the temperature, or the degree of acceleration.
 - A string variable holds a string of alphanumeric characters such as a person’s name, a password, or the day of the week.
@@ -25,7 +25,7 @@ Variables hold a specific type of information. A computer's memory can store man
 ### Rock Paper Scissors
 
 - Play a game of Rock Paper Scissors [Rock Paper Scissors Game](https://www.rpsgame.org/)
-- Keep track of how many times you won and a separate number tracking the number of times you tie.
+- Keep track of how many times you won, and a separate number tracking the number of times you tie.
 - **Play**: Play for a couple of minutes and, when done, add up your scores and how many ‘rounds’ you played.
 - **Play again**: Now start over and play again for another minute. When done, add up your scores and how many ‘rounds’ you played.
 - When prompted, share your results in the chat.
@@ -48,7 +48,7 @@ ADDRESS = "135 Marion Road"
 age = 35
 ```
 
-## Coding A Score Keeper
+## Coding A Scorekeeper
 
 You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeper that change over the course of a gaming session. What are those variables?
 
@@ -80,7 +80,7 @@ player_ties = 0
 
 ### Step 3: Updating the variable value
 
-In our program, we want to keep track of the number of times each player wins and the number of times they tie. We can use the buttons A and B to do this.
+In our program, we want to keep track of the number of times each player wins, and the number of times they tie. We can use the buttons A and B to do this.
 
 > Pseudocode:
 > Press button A to record a win for player A

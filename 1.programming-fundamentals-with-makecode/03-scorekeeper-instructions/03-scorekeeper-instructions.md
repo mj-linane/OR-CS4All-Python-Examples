@@ -8,7 +8,7 @@ lesson number: '4'
 
 ## Topic 1: Constants and Variables
 
-Computer programs process information. Some of the information that is input, stored, and used in a computer program has a value that is constant, meaning it does not change throughout the course of the program. An example of a constant in math is ‘pi’ because ‘pi’ has one value that never changes. Other pieces of information have values that vary or change during the running of a program. Programmers create variables to hold the value of information that may change. In a game program, a variable may be created to hold the player’s current score, since that value would change (hopefully!) during the course of the game.
+Computer programs process information. Some information that is input, stored, and used in a computer program has a value that is constant, meaning it does not change throughout the course of the program. An example of a constant in math is ‘pi’ because ‘pi’ has one value that never changes. Other pieces of information have values that vary or change during the running of a program. Programmers create variables to hold the value of information that may change. In a game program, a variable may be created to hold the player’s current score, since that value would change (hopefully!) during the course of the game.
 
 ### Discussion
 
@@ -19,7 +19,7 @@ Constants and variables can be numbers and/or text.
 
 ### How Variables are Stored
 
-Variables hold a specific type of information. A computer's memory can store many different type of variables. On MakeCode, we can keep track of numbers, strings(text), booleans, and sprites. The first time you use a variable, its type is assigned to match whatever it is holding.
+Variables hold a specific type of information. A computer's memory can store many types of variables. On MakeCode, we can keep track of numbers, strings(text), booleans, and sprites. The first time you use a variable, its type is assigned to match whatever it is holding.
 
 - A number variable could hold numerical data such as the year, the temperature, or the degree of acceleration.
 - A string variable holds a string of alphanumeric characters such as a person’s name, a password, or the day of the week.
@@ -29,7 +29,7 @@ Variables hold a specific type of information. A computer's memory can store man
 ### Rock Paper Scissors
 
 - Play a game of Rock Paper Scissors [Rock Paper Scissors Game](https://www.rpsgame.org/)
-- Keep track of how many times you won and a separate number tracking the number of times you tie.
+- Keep track of how many times you won, and a separate number tracking the number of times you tie.
 - **Play**: Play for a couple of minutes and, when done, add up your scores and how many ‘rounds’ you played.
 - **Play again**: Now start over and play again for another minute. When done, add up your scores and how many ‘rounds’ you played.
 - When prompted, share your results in the chat.
@@ -47,7 +47,7 @@ A **variable** is a saved value that does change in the program.
 
 Notice here that the “ADDRESS” is capitalized. This indicates that it is a constant and should not be changed in the program. However, there is nothing in Python that will absolutely stop a programmer from redefining that value.
 
-## Topic 2: Coding A Score Keeper Overview
+## Topic 2: Coding A Scorekeeper Overview
 
 You will be creating a program that will act as a scorekeeper for the Rock Paper Scissors game. They will need to create variables for the parts of scorekeeper that change over the course of a gaming session. What are those variables?
 
@@ -75,11 +75,11 @@ player_ties = 0
 
 ### Step 3: Updating the variable value
 
-In our program, we want to keep track of the number of times each player wins and the number of times they tie. We can use the buttons A and B to do this.
+In our program, we want to keep track of the number of times each player wins, and the number of times they tie. We can use the buttons A and B to do this.
 
 > Pseudocode:
-> Press button A to record a win for player A
-> Press button B to record a win for player B
+> Press button A to record a win for the player A
+> Press button B to record a win for the player B
 > Press button “up” to record a tie
 
 We already initialized these variables and now need to code to update the values at each round of the game.
@@ -162,7 +162,9 @@ Our program will add the values stored in the variables player_a_wins, player_b_
 The blocks for the mathematical operations adding, subtracting, multiplying, and dividing are listed in the Math section of the Toolbox.
 
 Replace the default values of zero with the names of the variables we want to add together.
-Notice that because we are adding three variables together we need a second math block. First we add the values for player_a_wins and player_b_wins, then add player_ties.
+
+Notice that because we are adding three variables together we need a second math block. First we add the values for 
+`player_a_wins` and `player_b_wins`, then add `player_ties`.
 
 Notice, we need to add in the `\n`, this will put the text on the new line. We also use the `game.show_long_text()` to show the entire text on the screen.
 
